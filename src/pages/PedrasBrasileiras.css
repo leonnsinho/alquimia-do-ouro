@@ -1,0 +1,102 @@
+/* ============================================
+   PEDRAS BRASILEIRAS PAGE - ALQUIMIA DO OURO
+   ============================================ */
+
+.pedras-intro {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--verde-musgo);
+}
+
+/* Lista de Pedras */
+.pedra-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacamento-xl);
+  align-items: center;
+  padding: var(--espacamento-xl) 0;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.15);
+}
+
+.pedra-item:last-child {
+  border-bottom: none;
+}
+
+.pedra-item-reverse {
+  direction: rtl;
+}
+
+.pedra-item-reverse > * {
+  direction: ltr;
+}
+
+.pedra-placeholder {
+  aspect-ratio: 1;
+}
+
+.pedra-conteudo h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin-bottom: var(--espacamento-xs);
+}
+
+.pedra-energia {
+  font-family: var(--font-titulo);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--dourado);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.pedra-descricao {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .pedra-item,
+  .pedra-item-reverse {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
+    direction: ltr;
+  }
+  
+  .pedra-conteudo {
+    text-align: center;
+  }
+  
+  .pedra-conteudo .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* CTA */
+.pedras-cta h2 {
+  color: var(--off-white);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.pedras-cta > p {
+  color: rgba(250, 248, 245, 0.8);
+  font-size: 1.1rem;
+  margin-bottom: var(--espacamento-lg);
+}
+
+.pedras-cta-buttons {
+  display: flex;
+  gap: var(--espacamento-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline-light {
+  border-color: var(--off-white);
+  color: var(--off-white);
+}
+
+.btn-outline-light:hover {
+  background: var(--off-white);
+  color: var(--verde-musgo);
+}

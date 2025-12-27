@@ -1,0 +1,717 @@
+/* ============================================
+   SOBRE NÓS PAGE - ALQUIMIA DO OURO
+   Design Premium & Emocional
+   ============================================ */
+
+/* ================================================
+   HERO - SOBRE NÓS
+   ================================================ */
+.sobre-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--verde-musgo-escuro);
+  padding: 8rem 0 6rem;
+}
+
+.sobre-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sobre-hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, 
+      rgba(26, 51, 40, 1) 0%, 
+      rgba(45, 74, 62, 1) 50%,
+      rgba(35, 60, 48, 1) 100%
+    );
+}
+
+.sobre-hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 2px 2px, rgba(184, 134, 11, 0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.sobre-hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sobre-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.sobre-hero-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.sobre-hero-title {
+  color: var(--off-white);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.sobre-hero-title em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.sobre-hero-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  animation: fadeIn 0.8s ease 0.4s both;
+}
+
+.sobre-hero-ornament span {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+}
+
+.sobre-hero-ornament svg {
+  width: 16px;
+  height: 16px;
+  color: var(--dourado);
+  opacity: 0.7;
+}
+
+/* ================================================
+   NARRATIVA PRINCIPAL
+   ================================================ */
+.sobre-narrativa {
+  padding: 8rem 0;
+  background: var(--off-white);
+}
+
+.narrativa-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.narrativa-numero {
+  position: sticky;
+  top: 120px;
+}
+
+.narrativa-numero span {
+  font-family: var(--font-titulo);
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 300;
+  color: var(--dourado);
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.narrativa-texto {
+  padding-top: 1rem;
+}
+
+.narrativa-destaque {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--verde-musgo);
+  margin-bottom: 2rem;
+}
+
+.narrativa-texto p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--cinza-texto);
+  margin-bottom: 1.5rem;
+}
+
+.narrativa-texto strong {
+  color: var(--verde-musgo);
+  font-weight: 500;
+}
+
+/* ================================================
+   CITAÇÃO DESTAQUE
+   ================================================ */
+.sobre-citacao {
+  position: relative;
+  padding: 6rem 0;
+  background: var(--off-white-quente);
+  overflow: hidden;
+}
+
+.sobre-citacao-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.citacao-principal {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+
+.citacao-aspas {
+  margin-bottom: 1.5rem;
+}
+
+.citacao-aspas svg {
+  width: 40px;
+  height: 40px;
+  color: var(--dourado);
+  opacity: 0.5;
+}
+
+.citacao-principal p {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--verde-musgo);
+  margin: 0 0 2rem 0;
+}
+
+.citacao-linha {
+  width: 60px;
+  height: 2px;
+  background: var(--dourado);
+  margin: 0 auto;
+}
+
+/* ================================================
+   FILOSOFIA
+   ================================================ */
+.sobre-filosofia {
+  padding: 8rem 0;
+  background: var(--off-white);
+}
+
+.filosofia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.filosofia-visual {
+  position: relative;
+}
+
+.filosofia-imagem {
+  position: relative;
+  z-index: 2;
+}
+
+.filosofia-imagem .image-placeholder {
+  aspect-ratio: 4/5;
+}
+
+.filosofia-imagem-accent {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid var(--dourado);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.filosofia-content {
+  padding-left: 2rem;
+}
+
+.filosofia-titulo {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--verde-musgo);
+  margin-bottom: 1.5rem;
+}
+
+.filosofia-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.filosofia-divider {
+  margin-bottom: 2rem;
+}
+
+.filosofia-divider span {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dourado), transparent);
+}
+
+.filosofia-texto {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--cinza-texto);
+  margin-bottom: 1.5rem;
+}
+
+/* ================================================
+   VALORES
+   ================================================ */
+.sobre-valores {
+  position: relative;
+  padding: 8rem 0;
+  background: var(--verde-musgo);
+  overflow: hidden;
+}
+
+.sobre-valores-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.valores-bg-circle {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.valores-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.valores-titulo {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 300;
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+
+.valores-header-line {
+  width: 60px;
+  height: 1px;
+  background: var(--dourado);
+  margin: 0 auto;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.valor-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(184, 134, 11, 0.15);
+  transition: var(--transicao-suave);
+}
+
+.valor-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(184, 134, 11, 0.3);
+  transform: translateY(-5px);
+}
+
+.valor-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: var(--dourado);
+}
+
+.valor-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.valor-card .valor-titulo {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: 0.75rem;
+}
+
+.valor-linha {
+  width: 30px;
+  height: 1px;
+  background: var(--dourado);
+  margin: 0 auto 1rem;
+  opacity: 0.5;
+}
+
+.valor-texto {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(250, 248, 245, 0.6);
+  margin: 0;
+}
+
+/* ================================================
+   ATELIÊ
+   ================================================ */
+.sobre-atelie {
+  padding: 8rem 0;
+  background: var(--off-white);
+}
+
+.atelie-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.atelie-titulo {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--verde-musgo);
+  margin-bottom: 1.5rem;
+}
+
+.atelie-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.atelie-subtexto {
+  font-size: 1.1rem;
+  color: var(--cinza-texto);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.atelie-galeria {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.atelie-img .image-placeholder {
+  aspect-ratio: 4/3;
+  height: 100%;
+}
+
+.atelie-img-grande .image-placeholder {
+  aspect-ratio: auto;
+}
+
+/* ================================================
+   FRASE FINAL
+   ================================================ */
+.sobre-frase-final {
+  position: relative;
+  padding: 10rem 0;
+  background: var(--verde-musgo-escuro);
+  overflow: hidden;
+}
+
+.frase-final-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.frase-final-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(184, 134, 11, 0.15) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.frase-final-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.frase-final-aspas {
+  font-family: var(--font-titulo);
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--dourado);
+  opacity: 0.3;
+  margin-bottom: -2rem;
+}
+
+.frase-final-texto {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--off-white);
+  border: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.frase-final-texto em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.frase-final-ornamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.frase-final-ornamento span {
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+}
+
+.frase-final-ornamento svg {
+  width: 14px;
+  height: 14px;
+  color: var(--dourado);
+  opacity: 0.6;
+}
+
+.frase-final-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 1px solid var(--dourado);
+  color: var(--off-white);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transicao-suave);
+}
+
+.frase-final-cta:hover {
+  background: var(--dourado);
+  color: var(--verde-musgo-escuro);
+}
+
+.frase-final-cta svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.frase-final-cta:hover svg {
+  transform: translateX(4px);
+}
+
+/* ================================================
+   ANIMAÇÕES
+   ================================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================================
+   RESPONSIVO
+   ================================================ */
+@media (max-width: 1024px) {
+  .valores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .atelie-galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .atelie-img-grande {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-hero {
+    min-height: 60vh;
+    padding: 6rem 0 4rem;
+  }
+  
+  .sobre-narrativa {
+    padding: 5rem 0;
+  }
+  
+  .narrativa-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .narrativa-numero {
+    position: static;
+    text-align: center;
+  }
+  
+  .narrativa-texto {
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  .sobre-citacao {
+    padding: 4rem 0;
+  }
+  
+  .sobre-filosofia {
+    padding: 5rem 0;
+  }
+  
+  .filosofia-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .filosofia-content {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .filosofia-divider span {
+    margin: 0 auto;
+  }
+  
+  .filosofia-imagem-accent {
+    display: none;
+  }
+  
+  .sobre-valores {
+    padding: 5rem 0;
+  }
+  
+  .valores-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .valor-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .sobre-atelie {
+    padding: 5rem 0;
+  }
+  
+  .atelie-galeria {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .atelie-img-grande {
+    grid-column: span 1;
+  }
+  
+  .sobre-frase-final {
+    padding: 6rem 0;
+  }
+  
+  .frase-final-aspas {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-hero {
+    min-height: 50vh;
+  }
+  
+  .sobre-hero-ornament span {
+    width: 40px;
+  }
+  
+  .narrativa-numero span {
+    font-size: 4rem;
+  }
+  
+  .frase-final-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

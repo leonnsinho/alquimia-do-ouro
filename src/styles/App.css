@@ -1,0 +1,114 @@
+/* ============================================
+   ALQUIMIA DO OURO - ESTILOS DO APP
+   ============================================ */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Animação de página */
+.page {
+  animation: pageEnter 0.6s ease;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero sections padrão para páginas internas */
+.page-hero {
+  background-color: var(--verde-musgo);
+  padding: var(--espacamento-xxl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(184, 134, 11, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-hero h1 {
+  color: var(--off-white);
+  margin-bottom: var(--espacamento-sm);
+  position: relative;
+}
+
+.page-hero .subtitle {
+  color: var(--dourado);
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-style: italic;
+  position: relative;
+}
+
+/* Conteúdo de páginas internas */
+.page-content {
+  padding: var(--espacamento-xl) 0;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards genéricos */
+.card {
+  background: var(--branco);
+  padding: var(--espacamento-lg);
+  transition: var(--transicao-suave);
+}
+
+.card:hover {
+  box-shadow: var(--sombra-suave);
+  transform: translateY(-4px);
+}
+
+/* Imagens placeholder para IA */
+.image-placeholder {
+  background: linear-gradient(135deg, var(--verde-musgo-escuro) 0%, var(--verde-musgo) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dourado);
+  font-family: var(--font-titulo);
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  padding: var(--espacamento-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.3;
+}

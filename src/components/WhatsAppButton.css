@@ -1,0 +1,79 @@
+/* ============================================
+   WHATSAPP BUTTON - ALQUIMIA DO OURO
+   Botão flutuante conforme briefing
+   ============================================ */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #25D366;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: var(--transicao-suave);
+}
+
+.whatsapp-button:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+  color: white;
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.whatsapp-text {
+  font-family: var(--font-texto);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  
+  .whatsapp-text {
+    display: none;
+  }
+  
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Animação de pulso sutil */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+  }
+}
+
+.whatsapp-button {
+  animation: pulse 3s infinite;
+}
+
+.whatsapp-button:hover {
+  animation: none;
+}

@@ -1,0 +1,145 @@
+/* ============================================
+   CONTATO PAGE - ALQUIMIA DO OURO
+   ============================================ */
+
+.contato-intro {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--verde-musgo);
+}
+
+/* WhatsApp Card */
+.whatsapp-card {
+  background: var(--branco);
+  padding: var(--espacamento-xl);
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--sombra-suave);
+}
+
+.whatsapp-icone {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto var(--espacamento-md);
+  color: #25D366;
+}
+
+.whatsapp-icone svg {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--espacamento-sm);
+}
+
+.whatsapp-card p {
+  color: var(--cinza-texto);
+  margin-bottom: var(--espacamento-md);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Informações */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacamento-lg);
+  text-align: center;
+}
+
+.info-item h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  color: var(--dourado);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: var(--verde-musgo);
+  margin-bottom: 0.25rem;
+}
+
+.info-detalhe {
+  font-size: 0.9rem !important;
+  color: var(--cinza-texto) !important;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-md);
+  }
+}
+
+/* Loja */
+.loja-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--espacamento-xl);
+  align-items: center;
+}
+
+.loja-placeholder {
+  aspect-ratio: 4/3;
+}
+
+.loja-texto h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--espacamento-md);
+}
+
+.loja-texto p {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .loja-grid {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
+  }
+  
+  .loja-texto {
+    text-align: center;
+  }
+}
+
+/* Frase Final */
+.contato-quote {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--off-white);
+  line-height: 1.6;
+  border: none;
+  padding: 0;
+  margin: 0 0 var(--espacamento-md);
+}
+
+.contato-frase .divider {
+  background: var(--dourado);
+  margin-bottom: var(--espacamento-md);
+}
+
+.contato-assinatura {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  color: var(--dourado);
+  margin: 0;
+}

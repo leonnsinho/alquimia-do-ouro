@@ -1,0 +1,1856 @@
+/* ============================================
+   HOME PAGE - ALQUIMIA DO OURO
+   Design Premium & Editorial de Luxo
+   ============================================ */
+
+/* ================================================
+   DOBRA 1 - HERO
+   ================================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  overflow: hidden;
+  background: var(--verde-musgo-escuro);
+}
+
+/* Background */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, 
+      rgba(26, 51, 40, 1) 0%, 
+      rgba(45, 74, 62, 1) 40%,
+      rgba(35, 60, 48, 1) 70%,
+      rgba(26, 51, 40, 1) 100%
+    );
+}
+
+.hero-bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.hero-bg-glow-1 {
+  top: 10%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(184, 134, 11, 0.3) 0%, transparent 70%);
+}
+
+.hero-bg-glow-2 {
+  bottom: 20%;
+  right: 15%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(184, 134, 11, 0.2) 0%, transparent 70%);
+}
+
+.hero-bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 2px 2px, rgba(184, 134, 11, 0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* Conteúdo principal */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 850px;
+  padding: 0 2rem;
+}
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  animation: heroFadeIn 1s ease 0.2s both;
+}
+
+.hero-label-line {
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado));
+}
+
+.hero-label-line:last-child {
+  background: linear-gradient(90deg, var(--dourado), transparent);
+}
+
+.hero-label-text {
+  font-family: var(--font-texto);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dourado);
+}
+
+.hero-title {
+  color: var(--off-white);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  animation: heroFadeUp 1s ease 0.4s both;
+}
+
+.hero-title-line {
+  display: block;
+}
+
+.hero-title-line em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.hero-description {
+  color: rgba(250, 248, 245, 0.8);
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: heroFadeUp 1s ease 0.8s both;
+}
+
+/* Botão CTA */
+.hero-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2.5rem;
+  background: transparent;
+  border: 1px solid var(--dourado);
+  color: var(--off-white);
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.4s ease, border-color 0.4s ease;
+  animation: heroFadeUp 1s ease 1s both;
+}
+
+.hero-button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--dourado);
+  transition: width 0.4s ease;
+  z-index: 0;
+}
+
+.hero-button:hover .hero-button-bg {
+  width: 100%;
+}
+
+.hero-button:hover {
+  color: var(--verde-musgo-escuro);
+}
+
+.hero-button-text {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-button-icon {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.hero-button-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-button:hover .hero-button-icon {
+  transform: translateX(5px);
+}
+
+/* Badge de tradição */
+.hero-tradition-badge {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: heroFadeIn 1s ease 1.4s both;
+}
+
+.hero-tradition-number {
+  font-family: var(--font-titulo);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--dourado);
+  line-height: 1;
+}
+
+.hero-tradition-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(250, 248, 245, 0.6);
+  line-height: 1.4;
+}
+
+/* Animações */
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  }
+  
+  .hero-tradition-badge {
+    right: 2rem;
+    bottom: 2rem;
+  }
+  
+  .hero-tradition-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-frame-corner {
+    width: 45px;
+    height: 45px;
+  }
+  
+.hero-content {
+    padding: 0 2rem;
+    max-width: 700px;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-tradition-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+    padding: 4rem 0;
+  }
+  
+.hero-content {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-label {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-label-line {
+    width: 25px;
+  }
+  
+  .hero-label-text {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+  }
+  
+  .hero-ornament {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-ornament span {
+    width: 40px;
+  }
+  
+  .hero-ornament svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 1rem 1.75rem;
+  }
+  
+  .hero-button-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .hero-button-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
+.hero-content {
+    padding: 0 1.25rem;
+  }
+  
+  .hero-label-line {
+    width: 20px;
+  }
+  
+  .hero-label-text {
+    font-size: 0.55rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  
+  .hero-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-label {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hero-label-line {
+    display: none;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-ornament span {
+    width: 30px;
+  }
+}
+
+/* ================================================
+   DOBRA 2 – CONCEITO
+   ================================================ */
+section.conceito {
+  position: relative;
+  padding: 8rem 0;
+  background: var(--off-white);
+  overflow: hidden;
+  display: block !important;
+}
+
+section.conceito .conceito-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+section.conceito .conceito-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.08;
+}
+
+section.conceito .container {
+  display: block !important;
+}
+
+section.conceito .conceito-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block !important;
+}
+
+section.conceito .conceito-label {
+  display: block !important;
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 2rem;
+}
+
+section.conceito .conceito-titulo {
+  display: block !important;
+  width: 100%;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--verde-musgo);
+  margin-bottom: 2rem;
+}
+
+section.conceito .conceito-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+section.conceito .conceito-ornament {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section.conceito .conceito-ornament span {
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+}
+
+section.conceito .conceito-ornament svg {
+  width: 14px;
+  height: 14px;
+  color: var(--dourado);
+  opacity: 0.6;
+}
+
+section.conceito .conceito-texto {
+  display: block !important;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--cinza-texto);
+  margin-bottom: 3rem;
+}
+
+section.conceito .conceito-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: var(--off-white-quente);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+section.conceito .conceito-badge-numero {
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--dourado);
+  line-height: 1;
+}
+
+section.conceito .conceito-badge-texto {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--verde-musgo);
+}
+
+@media (max-width: 768px) {
+  section.conceito {
+    padding: 5rem 0;
+  }
+  
+  section.conceito .conceito-circle {
+    width: 300px;
+    height: 300px;
+  }
+  
+  section.conceito .conceito-ornament span {
+    width: 35px;
+  }
+  
+  section.conceito .conceito-badge {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+  }
+}
+
+/* Section Label global */
+.section-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 1.5rem;
+}
+
+.section-label-light {
+  color: var(--dourado);
+}
+
+/* ================================================
+   DOBRA 3 – PILARES
+   ================================================ */
+.pilares {
+  position: relative;
+  padding: 10rem 0;
+  background: var(--verde-musgo);
+  overflow: hidden;
+}
+
+.pilares-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 0% 0%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(184, 134, 11, 0.05) 0%, transparent 50%);
+}
+
+.pilares-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.pilares-titulo {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 300;
+  color: var(--off-white);
+  margin-bottom: 1.5rem;
+}
+
+.pilares-header-line {
+  width: 80px;
+  height: 1px;
+  background: var(--dourado);
+  margin: 0 auto;
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.pilar-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(184, 134, 11, 0.15);
+  transition: var(--transicao-suave);
+  position: relative;
+}
+
+.pilar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--dourado);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.pilar-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(184, 134, 11, 0.3);
+  transform: translateY(-5px);
+}
+
+.pilar-card:hover::before {
+  transform: scaleX(1);
+}
+
+.pilar-number {
+  font-family: var(--font-titulo);
+  font-size: 0.75rem;
+  color: var(--dourado);
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.pilar-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: var(--dourado);
+}
+
+.pilar-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pilar-titulo {
+  font-family: var(--font-titulo);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: 0.75rem;
+}
+
+.pilar-line {
+  width: 30px;
+  height: 1px;
+  background: var(--dourado);
+  margin: 0 auto 1rem;
+  opacity: 0.5;
+}
+
+.pilar-texto {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(250, 248, 245, 0.6);
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .pilares-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pilares {
+    padding: 6rem 0;
+  }
+  
+  .pilares-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pilares-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================================
+   DOBRA 4 – PROCESSO CRIATIVO (TIMELINE)
+   ================================================ */
+.processo {
+  position: relative;
+  padding: 10rem 0 8rem;
+  background: linear-gradient(180deg, var(--off-white) 0%, var(--off-white-quente) 100%);
+  overflow: hidden;
+}
+
+.processo-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.processo-bg-circle {
+  position: absolute;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.processo-bg-circle-1 {
+  top: -200px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+}
+
+.processo-bg-circle-2 {
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+}
+
+.processo-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.processo-titulo {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--verde-musgo);
+}
+
+.processo-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+/* Timeline Layout */
+.processo-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.timeline-linha {
+  position: absolute;
+  top: 30px;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: rgba(184, 134, 11, 0.15);
+}
+
+.timeline-linha-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--dourado), var(--dourado) 90%, transparent);
+  opacity: 0.6;
+}
+
+.timeline-etapa {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.timeline-etapa-marker {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-etapa-dot {
+  width: 60px;
+  height: 60px;
+  background: var(--off-white);
+  border: 2px solid var(--dourado);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transicao-suave);
+  position: relative;
+}
+
+.timeline-etapa-dot::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.timeline-etapa:hover .timeline-etapa-dot::before {
+  opacity: 0.3;
+}
+
+.timeline-etapa:hover .timeline-etapa-dot {
+  background: var(--dourado);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+}
+
+.timeline-etapa-numero {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--dourado);
+  transition: color 0.3s ease;
+}
+
+.timeline-etapa:hover .timeline-etapa-numero {
+  color: var(--off-white);
+}
+
+.timeline-etapa-content {
+  padding-top: 1.5rem;
+}
+
+.timeline-etapa-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  color: var(--verde-musgo);
+  opacity: 0.6;
+  transition: var(--transicao-suave);
+}
+
+.timeline-etapa-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-etapa:hover .timeline-etapa-icon {
+  opacity: 1;
+  color: var(--dourado);
+  transform: translateY(-3px);
+}
+
+.timeline-etapa-titulo {
+  font-family: var(--font-titulo);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--verde-musgo);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-etapa-descricao {
+  font-size: 0.85rem;
+  color: var(--cinza-texto);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Button */
+.processo-cta {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.processo-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2.5rem;
+  background: var(--verde-musgo);
+  color: var(--off-white);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: var(--transicao-suave);
+  position: relative;
+  overflow: hidden;
+}
+
+.processo-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 134, 11, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.processo-cta-button:hover::before {
+  left: 100%;
+}
+
+.processo-cta-button:hover {
+  background: var(--dourado);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+}
+
+.processo-cta-text {
+  position: relative;
+  z-index: 1;
+}
+
+.processo-cta-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.processo-cta-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.processo-cta-button:hover .processo-cta-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1024px) {
+  .processo-timeline {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem 2rem;
+    padding-top: 0;
+  }
+  
+  .timeline-linha {
+    display: none;
+  }
+  
+  .timeline-etapa {
+    flex: 0 0 45%;
+    max-width: 280px;
+  }
+  
+  .timeline-etapa-marker {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .processo {
+    padding: 6rem 0;
+  }
+  
+  .processo-timeline {
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  .timeline-etapa {
+    flex: 1;
+    max-width: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  
+  .timeline-etapa-marker {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .timeline-etapa-dot {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .timeline-etapa-content {
+    padding-top: 0;
+    flex: 1;
+  }
+  
+  .timeline-etapa-icon {
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .timeline-etapa-descricao {
+    max-width: none;
+    margin: 0;
+  }
+  
+  .processo-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ================================================
+   DOBRA 5 – PEDRAS EM DESTAQUE
+   ================================================ */
+.pedras-destaque {
+  position: relative;
+  padding: 10rem 0;
+  background: var(--verde-musgo);
+  overflow: hidden;
+}
+
+.pedras-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.pedras-bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(184, 134, 11, 0.08) 0%, transparent 50%);
+}
+
+.pedras-bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(184, 134, 11, 0.15) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.2;
+}
+
+.pedras-wrapper {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 5rem;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+
+.pedras-intro {
+  position: sticky;
+  top: 120px;
+}
+
+.pedras-titulo {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--off-white);
+  margin-bottom: 1.5rem;
+}
+
+.pedras-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.pedras-divider {
+  margin-bottom: 1.5rem;
+}
+
+.pedras-divider span {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dourado), transparent);
+}
+
+.pedras-texto {
+  font-size: 1rem;
+  color: rgba(250, 248, 245, 0.7);
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+}
+
+.pedras-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--dourado);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transicao-suave);
+}
+
+.pedras-link:hover {
+  color: var(--off-white);
+}
+
+.pedras-link span {
+  position: relative;
+}
+
+.pedras-link span::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.pedras-link:hover span::after {
+  transform: scaleX(1);
+}
+
+.pedras-link-icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transicao-suave);
+}
+
+.pedras-link-icon svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.pedras-link:hover .pedras-link-icon {
+  background: var(--dourado);
+  border-color: var(--dourado);
+}
+
+.pedras-link:hover .pedras-link-icon svg {
+  transform: translateX(2px);
+  color: var(--verde-musgo);
+}
+
+.pedras-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.pedra-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  padding: 2.5rem 2rem;
+  transition: var(--transicao-suave);
+  overflow: hidden;
+}
+
+.pedra-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--pedra-cor), 0.1) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.pedra-card:hover::before {
+  opacity: 1;
+}
+
+.pedra-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(184, 134, 11, 0.4);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 60px rgba(184, 134, 11, 0.1);
+}
+
+.pedra-card-visual {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+}
+
+.pedra-card-glow {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--pedra-cor), transparent 70%);
+  opacity: 0.3;
+  filter: blur(15px);
+  transition: opacity 0.4s ease;
+}
+
+.pedra-card:hover .pedra-card-glow {
+  opacity: 0.5;
+}
+
+.pedra-card-stone {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--pedra-cor) 0%,
+    var(--pedra-cor-secundaria) 50%,
+    color-mix(in srgb, var(--pedra-cor-secundaria) 70%, #000) 100%
+  );
+  box-shadow: 
+    inset -5px -5px 15px rgba(0, 0, 0, 0.3),
+    inset 5px 5px 15px rgba(255, 255, 255, 0.2),
+    0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: var(--transicao-suave);
+}
+
+.pedra-card:hover .pedra-card-stone {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.pedra-card-facets {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 50%;
+  background: 
+    conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      rgba(255, 255, 255, 0.1) 30deg,
+      transparent 60deg,
+      transparent 120deg,
+      rgba(255, 255, 255, 0.08) 150deg,
+      transparent 180deg,
+      transparent 240deg,
+      rgba(255, 255, 255, 0.12) 270deg,
+      transparent 300deg
+    );
+}
+
+.pedra-card-shine {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(3px);
+}
+
+.pedra-card-reflection {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 20px;
+  background: radial-gradient(ellipse, var(--pedra-cor), transparent 70%);
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+.pedra-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.pedra-card-nome {
+  font-family: var(--font-titulo);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: 0.5rem;
+}
+
+.pedra-card-energia {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  padding: 0.35rem 0.75rem;
+  background: rgba(184, 134, 11, 0.15);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  margin-bottom: 1rem;
+}
+
+.pedra-card-descricao {
+  font-size: 0.9rem;
+  color: rgba(250, 248, 245, 0.6);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.pedra-card-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  pointer-events: none;
+  transition: border-color 0.4s ease;
+}
+
+.pedra-card:hover .pedra-card-border {
+  border-color: var(--pedra-cor);
+  opacity: 0.3;
+}
+
+@media (max-width: 1100px) {
+  .pedras-wrapper {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .pedras-intro {
+    position: static;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .pedras-divider span {
+    margin: 0 auto;
+  }
+  
+  .pedras-link {
+    justify-content: center;
+  }
+  
+  .pedras-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pedras-destaque {
+    padding: 6rem 0;
+  }
+  
+  .pedras-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pedra-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  
+  .pedra-card-visual {
+    margin-bottom: 0;
+  }
+  
+  .pedra-card-reflection {
+    display: none;
+  }
+}
+
+/* ================================================
+   DOBRA 6 – TRADIÇÃO (Simples e Elegante)
+   ================================================ */
+.tradicao {
+  position: relative;
+  padding: 10rem 0;
+  background: var(--off-white);
+  overflow: hidden;
+}
+
+.tradicao-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.tradicao-bg-line {
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, var(--dourado), transparent);
+  opacity: 0.2;
+}
+
+.tradicao-bg-line-1 {
+  top: 0;
+  left: 20%;
+}
+
+.tradicao-bg-line-2 {
+  bottom: 0;
+  right: 25%;
+}
+
+.tradicao-bg-ornament {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border: 1px solid var(--dourado);
+  border-radius: 50%;
+  opacity: 0.03;
+}
+
+.tradicao-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.tradicao-numero-destaque {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.tradicao-numero-47 {
+  font-family: var(--font-titulo);
+  font-size: clamp(6rem, 15vw, 10rem);
+  font-weight: 300;
+  color: var(--dourado);
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+}
+
+.tradicao-numero-detalhe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.tradicao-numero-anos {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--verde-musgo);
+}
+
+.tradicao-numero-linha {
+  width: 40px;
+  height: 2px;
+  background: var(--dourado);
+  opacity: 0.5;
+}
+
+.tradicao-titulo {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--verde-musgo);
+  margin-bottom: 2rem;
+}
+
+.tradicao-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.tradicao-separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tradicao-separador span {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+}
+
+.tradicao-separador svg {
+  width: 20px;
+  height: 20px;
+  color: var(--dourado);
+  opacity: 0.6;
+}
+
+.tradicao-texto {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: var(--cinza-texto);
+  margin-bottom: 3rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tradicao-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--dourado);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: var(--transicao-suave);
+}
+
+.tradicao-link:hover {
+  color: var(--verde-musgo);
+}
+
+.tradicao-link span {
+  position: relative;
+}
+
+.tradicao-link span::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.tradicao-link:hover span::after {
+  transform: scaleX(1);
+}
+
+.tradicao-link-icon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transicao-suave);
+}
+
+.tradicao-link-icon svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.tradicao-link:hover .tradicao-link-icon {
+  background: var(--verde-musgo);
+  border-color: var(--verde-musgo);
+  color: var(--off-white);
+}
+
+.tradicao-link:hover .tradicao-link-icon svg {
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .tradicao {
+    padding: 6rem 0;
+  }
+  
+  .tradicao-numero-destaque {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .tradicao-numero-detalhe {
+    align-items: center;
+  }
+  
+  .tradicao-separador span {
+    width: 50px;
+  }
+  
+  .tradicao-texto {
+    font-size: 1.05rem;
+  }
+}
+
+/* ================================================
+   DOBRA 7 – CTA FINAL
+   ================================================ */
+.cta-final {
+  position: relative;
+  padding: 10rem 0;
+  background: var(--verde-musgo-escuro);
+  overflow: hidden;
+}
+
+.cta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cta-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, 
+      rgba(26, 51, 40, 1) 0%, 
+      rgba(45, 74, 62, 1) 50%,
+      rgba(35, 60, 48, 1) 100%
+    );
+}
+
+.cta-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(184, 134, 11, 0.2) 0%, transparent 60%);
+  filter: blur(80px);
+}
+
+.cta-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 2rem;
+}
+
+.cta-titulo {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--off-white);
+  margin-bottom: 2rem;
+}
+
+.cta-titulo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.cta-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-ornament span {
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+}
+
+.cta-ornament svg {
+  width: 14px;
+  height: 14px;
+  color: var(--dourado);
+  opacity: 0.6;
+}
+
+.cta-subtexto {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(250, 248, 245, 0.7);
+  margin-bottom: 3rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  background: var(--dourado);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transicao-suave);
+}
+
+.cta-button:hover {
+  background: var(--off-white);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(184, 134, 11, 0.3);
+}
+
+.cta-button-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--verde-musgo-escuro);
+}
+
+.cta-whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--verde-musgo-escuro);
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-whatsapp-icon {
+  transform: scale(1.1);
+}
+
+.cta-frase-chave {
+  font-family: var(--font-titulo);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(250, 248, 245, 0.5);
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.cta-frase-chave em {
+  font-style: italic;
+  color: rgba(184, 134, 11, 0.7);
+}
+
+@media (max-width: 768px) {
+  .cta-final {
+    padding: 6rem 0;
+  }
+  
+  .cta-glow {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .cta-ornament span {
+    width: 35px;
+  }
+  
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1.15rem 2rem;
+  }
+  
+  .cta-frase-chave {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-final {
+    padding: 5rem 0;
+  }
+  
+  .cta-subtexto br {
+    display: none;
+  }
+}

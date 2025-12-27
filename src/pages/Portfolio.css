@@ -1,0 +1,103 @@
+/* ============================================
+   PORTFÓLIO PAGE - ALQUIMIA DO OURO
+   ============================================ */
+
+.portfolio-intro {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--verde-musgo);
+}
+
+/* Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacamento-lg);
+}
+
+.portfolio-item {
+  cursor: pointer;
+}
+
+.portfolio-imagem {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-imagem .image-placeholder {
+  aspect-ratio: 1;
+  transition: var(--transicao-lenta);
+}
+
+.portfolio-item:hover .image-placeholder {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: var(--espacamento-sm);
+  left: var(--espacamento-sm);
+  background: rgba(45, 74, 62, 0.9);
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: var(--transicao-suave);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-tipo {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dourado);
+}
+
+.portfolio-info {
+  padding: var(--espacamento-md) 0;
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  color: var(--verde-musgo);
+  margin-bottom: var(--espacamento-xs);
+}
+
+.portfolio-info p {
+  font-family: var(--font-titulo);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--cinza-texto);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTA */
+.portfolio-cta h2 {
+  color: var(--off-white);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.portfolio-cta .divider {
+  background: var(--dourado);
+  margin-bottom: var(--espacamento-lg);
+}

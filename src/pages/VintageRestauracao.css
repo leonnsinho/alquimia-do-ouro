@@ -1,0 +1,137 @@
+/* ============================================
+   VINTAGE & RESTAURAÇÃO PAGE - ALQUIMIA DO OURO
+   ============================================ */
+
+.vintage-intro {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--verde-musgo);
+}
+
+/* Conceito */
+.conceito-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacamento-xl);
+  align-items: center;
+}
+
+.conceito-imagem .image-placeholder {
+  aspect-ratio: 4/5;
+}
+
+.conceito-texto h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--espacamento-md);
+}
+
+.conceito-texto p {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .conceito-grid {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
+  }
+}
+
+/* Serviços */
+.vintage-servicos h2 {
+  margin-bottom: var(--espacamento-sm);
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espacamento-lg);
+  margin-top: var(--espacamento-xl);
+}
+
+.servico-card {
+  background: var(--off-white-quente);
+  padding: var(--espacamento-lg);
+  transition: var(--transicao-suave);
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-suave);
+}
+
+.servico-card h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  color: var(--dourado);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.servico-card p {
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Transformação */
+.vintage-transformacao h2 {
+  margin-bottom: var(--espacamento-sm);
+}
+
+.transformacao-intro {
+  color: var(--cinza-texto);
+  margin-bottom: var(--espacamento-lg);
+}
+
+.transformacao-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transformacao-item {
+  display: flex;
+  align-items: center;
+  gap: var(--espacamento-md);
+}
+
+.transformacao-img {
+  flex: 1;
+  aspect-ratio: 1;
+}
+
+.transformacao-seta {
+  font-size: 2rem;
+  color: var(--dourado);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .transformacao-item {
+    flex-direction: column;
+  }
+  
+  .transformacao-seta {
+    transform: rotate(90deg);
+  }
+}
+
+/* CTA */
+.vintage-cta h2 {
+  color: var(--off-white);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.vintage-cta p {
+  color: rgba(250, 248, 245, 0.8);
+  font-size: 1.1rem;
+  margin-bottom: var(--espacamento-lg);
+}

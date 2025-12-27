@@ -1,0 +1,329 @@
+/* ============================================
+   ALQUIMIA DO OURO - ESTILOS GLOBAIS
+   Paleta: Verde musgo, Dourado escuro, Off-white
+   Tipografia: Cormorant Garamond (títulos), Inter (textos)
+   ============================================ */
+
+:root {
+  /* Cores principais - conforme briefing */
+  --verde-musgo: #2D4A3E;
+  --verde-musgo-escuro: #1E352A;
+  --dourado: #B8860B;
+  --dourado-escuro: #8B6914;
+  --dourado-claro: #D4A84B;
+  --ouro-liquido: linear-gradient(135deg, #B8860B 0%, #D4A84B 50%, #B8860B 100%);
+  --off-white: #FAF8F5;
+  --off-white-quente: #F5F0E8;
+  --branco: #FFFFFF;
+  --preto: #1A1A1A;
+  --cinza-texto: #4A4A4A;
+  
+  /* Tipografia */
+  --font-titulo: 'Cormorant Garamond', Georgia, serif;
+  --font-texto: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Espaçamentos */
+  --espacamento-xs: 0.5rem;
+  --espacamento-sm: 1rem;
+  --espacamento-md: 2rem;
+  --espacamento-lg: 4rem;
+  --espacamento-xl: 6rem;
+  --espacamento-xxl: 8rem;
+  
+  /* Transições */
+  --transicao-suave: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transicao-lenta: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Sombras sutis */
+  --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --sombra-dourada: 0 4px 30px rgba(184, 134, 11, 0.15);
+}
+
+/* Reset e Base */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-texto);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--cinza-texto);
+  background-color: var(--off-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia - Hierarquia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--verde-musgo);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Links */
+a {
+  color: var(--dourado);
+  text-decoration: none;
+  transition: var(--transicao-suave);
+}
+
+a:hover {
+  color: var(--dourado-escuro);
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--espacamento-md);
+}
+
+.container-narrow {
+  max-width: 800px;
+}
+
+.container-wide {
+  max-width: 1400px;
+}
+
+/* Seções */
+.section {
+  padding: var(--espacamento-xl) 0;
+}
+
+.section-lg {
+  padding: var(--espacamento-xxl) 0;
+}
+
+/* Fundos */
+.bg-verde {
+  background-color: var(--verde-musgo);
+  color: var(--off-white);
+}
+
+.bg-verde h1, .bg-verde h2, .bg-verde h3, .bg-verde h4 {
+  color: var(--off-white);
+}
+
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.bg-off-white-quente {
+  background-color: var(--off-white-quente);
+}
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-texto);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: var(--transicao-suave);
+}
+
+.btn-primary {
+  background: var(--dourado);
+  color: var(--branco);
+}
+
+.btn-primary:hover {
+  background: var(--dourado-escuro);
+  color: var(--branco);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-dourada);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--dourado);
+  border: 1px solid var(--dourado);
+}
+
+.btn-outline:hover {
+  background: var(--dourado);
+  color: var(--branco);
+}
+
+.btn-light {
+  background: var(--off-white);
+  color: var(--verde-musgo);
+}
+
+.btn-light:hover {
+  background: var(--branco);
+  transform: translateY(-2px);
+}
+
+/* Divisores */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--dourado);
+  margin: var(--espacamento-md) 0;
+}
+
+.divider-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texto centralizado */
+.text-center {
+  text-align: center;
+}
+
+/* Animações de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-delay-1 { animation-delay: 0.2s; }
+.fade-in-delay-2 { animation-delay: 0.4s; }
+.fade-in-delay-3 { animation-delay: 0.6s; }
+.fade-in-delay-4 { animation-delay: 0.8s; }
+
+/* Utilitários de espaçamento */
+.mt-sm { margin-top: var(--espacamento-sm); }
+.mt-md { margin-top: var(--espacamento-md); }
+.mt-lg { margin-top: var(--espacamento-lg); }
+
+.mb-sm { margin-bottom: var(--espacamento-sm); }
+.mb-md { margin-bottom: var(--espacamento-md); }
+.mb-lg { margin-bottom: var(--espacamento-lg); }
+
+/* Grid responsivo */
+.grid {
+  display: grid;
+  gap: var(--espacamento-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .grid-4, .grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .section {
+    padding: var(--espacamento-lg) 0;
+  }
+  
+  .grid-2, .grid-3, .grid-4, .grid-5 {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0 var(--espacamento-sm);
+  }
+}
+
+/* Seleção de texto */
+::selection {
+  background: var(--dourado);
+  color: var(--branco);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dourado);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dourado-escuro);
+}

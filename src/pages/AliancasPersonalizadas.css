@@ -1,0 +1,139 @@
+/* ============================================
+   ALIANÇAS PERSONALIZADAS PAGE - ALQUIMIA DO OURO
+   ============================================ */
+
+.aliancas-intro {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--verde-musgo);
+}
+
+/* Destaque */
+.destaque-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--espacamento-xl);
+  align-items: center;
+}
+
+.destaque-placeholder {
+  aspect-ratio: 16/10;
+}
+
+.destaque-texto h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--espacamento-md);
+  line-height: 1.4;
+}
+
+.destaque-texto p {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .destaque-grid {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
+  }
+}
+
+/* Diferenciais */
+.aliancas-diferenciais h2 {
+  margin-bottom: var(--espacamento-sm);
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--espacamento-md);
+  margin-top: var(--espacamento-xl);
+}
+
+.diferencial-card {
+  background: var(--branco);
+  padding: var(--espacamento-lg);
+  text-align: center;
+  transition: var(--transicao-suave);
+}
+
+.diferencial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-suave);
+}
+
+.diferencial-numero {
+  display: block;
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  color: var(--dourado);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.diferencial-card h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  color: var(--verde-musgo);
+  margin-bottom: var(--espacamento-xs);
+}
+
+.diferencial-card p {
+  font-size: 0.9rem;
+  color: var(--cinza-texto);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .diferenciais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Galeria */
+.aliancas-galeria h2 {
+  margin-bottom: var(--espacamento-sm);
+}
+
+.galeria-aliancas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--espacamento-md);
+  margin-top: var(--espacamento-xl);
+}
+
+.galeria-alianca-img {
+  aspect-ratio: 1;
+}
+
+@media (max-width: 1024px) {
+  .galeria-aliancas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-aliancas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTA */
+.aliancas-cta h2 {
+  color: var(--off-white);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.aliancas-cta p {
+  color: rgba(250, 248, 245, 0.8);
+  font-size: 1.1rem;
+  margin-bottom: var(--espacamento-lg);
+}
