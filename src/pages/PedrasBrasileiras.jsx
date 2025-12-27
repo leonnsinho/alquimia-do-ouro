@@ -8,57 +8,60 @@ function PedrasBrasileiras() {
       nome: 'Quartzo Rosa',
       energia: 'Energia do amor, afeto e cura emocional.',
       descricao: 'A pedra do amor incondicional. Suaviza o coração, atrai harmonia nos relacionamentos e promove o autocuidado. Ideal para quem busca cura emocional e conexão afetiva.',
-      cor: '#F4C2C2'
+      imagem: '/quartzo-rosa.png'
     },
     {
       id: 2,
       nome: 'Ametista',
       energia: 'Clareza mental, espiritualidade e proteção.',
       descricao: 'Conecta o espiritual ao terreno. Traz paz interior, intuição aguçada e proteção energética. Uma pedra para quem busca equilíbrio entre razão e intuição.',
-      cor: '#9966CC'
+      imagem: '/amatista.png'
     },
     {
       id: 3,
       nome: 'Citrino',
       energia: 'Prosperidade, criatividade e vitalidade.',
       descricao: 'A pedra do sol. Atrai abundância, estimula a criatividade e renova as energias. Perfeita para novos começos e manifestação de desejos.',
-      cor: '#E4A010'
+      imagem: '/citrino.png'
     },
     {
       id: 4,
       nome: 'Ônix',
       energia: 'Força, proteção e estabilidade emocional.',
       descricao: 'O guardião silencioso. Oferece proteção contra energias negativas, fortalece a determinação e promove estabilidade em momentos de mudança.',
-      cor: '#353839'
+      imagem: '/onix.png'
     },
     {
       id: 5,
       nome: 'Água-marinha',
       energia: 'Calma, comunicação e equilíbrio.',
       descricao: 'A essência do mar em forma de cristal. Acalma a mente, facilita a expressão verdadeira e traz serenidade. Para quem busca paz e clareza.',
-      cor: '#7FFFD4'
+      imagem: '/agua-marinha.png'
     }
   ]
 
   return (
     <div className="page pedras-brasileiras">
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1>Pedras Brasileiras & Energéticas</h1>
-          <p className="subtitle">Cada pedra carrega uma intenção</p>
+      
+      {/* ================================================
+          HERO - PEDRAS BRASILEIRAS
+          ================================================ */}
+      <section className="pedras-hero">
+        <div className="pedras-hero-bg">
+          <div className="pedras-hero-gradient"></div>
+          <div className="pedras-hero-pattern"></div>
         </div>
-      </section>
-
-      {/* Intro */}
-      <section className="section section-lg">
-        <div className="container container-narrow text-center">
-          <p className="pedras-intro">
-            As pedras brasileiras são tesouros da terra. 
-            Cada uma carrega milhões de anos de formação e uma energia única. 
-            Na Alquimia do Ouro, selecionamos pedras não apenas pela beleza, 
-            mas pelo significado que podem trazer à sua joia.
-          </p>
+        
+        <div className="container">
+          <div className="pedras-hero-content">
+            <h1 className="pedras-hero-title">
+              Pedras Brasileiras & <em>Energéticas</em>
+            </h1>
+            <p className="pedras-hero-texto">
+              Cada pedra carrega uma intenção. Tesouros da terra brasileira que guardam
+              milhões de anos de formação e uma energia única para sua joia.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -71,12 +74,11 @@ function PedrasBrasileiras() {
               className={`pedra-item ${index % 2 !== 0 ? 'pedra-item-reverse' : ''}`}
             >
               <div className="pedra-imagem">
-                <div 
-                  className="image-placeholder pedra-placeholder"
-                  style={{ background: `linear-gradient(135deg, ${pedra.cor}40, var(--verde-musgo))` }}
-                >
-                  <span>Imagem IA: {pedra.nome}</span>
-                </div>
+                <img 
+                  src={pedra.imagem} 
+                  alt={pedra.nome}
+                  className="pedra-foto"
+                />
               </div>
               <div className="pedra-conteudo">
                 <h2>{pedra.nome}</h2>

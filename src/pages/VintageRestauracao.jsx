@@ -24,32 +24,35 @@ function VintageRestauracao() {
 
   return (
     <div className="page vintage-restauracao">
-      {/* Hero */}
-      <section className="page-hero">
+      
+      {/* ================================================
+          HERO - VINTAGE & RESTAURAÇÃO
+          ================================================ */}
+      <section className="vintage-hero">
+        <div className="vintage-hero-bg">
+          <div className="vintage-hero-gradient"></div>
+          <div className="vintage-hero-pattern"></div>
+        </div>
+        
         <div className="container">
-          <h1>Vintage & Restauração</h1>
-          <p className="subtitle">Transformar é preservar</p>
+          <div className="vintage-hero-content">
+            <h1 className="vintage-hero-title">
+              Vintage & <em>Restauração</em>
+            </h1>
+            <p className="vintage-hero-texto">
+              Algumas joias não precisam ser substituídas. Precisam ser transformadas.
+              Restauramos e ressignificamos peças antigas, preservando suas memórias.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Conceito Principal */}
-      <section className="section section-lg">
-        <div className="container container-narrow text-center">
-          <p className="vintage-intro">
-            Algumas joias não precisam ser substituídas. Precisam ser transformadas. 
-            Restauramos e ressignificamos peças antigas, preservando suas memórias.
-          </p>
-        </div>
-      </section>
-
-      {/* Imagem e texto */}
+      {/* Imagem e texto */}}
       <section className="section vintage-conceito bg-off-white-quente">
         <div className="container">
           <div className="conceito-grid">
             <div className="conceito-imagem">
-              <div className="image-placeholder">
-                <span>Imagem IA: Joia antiga sendo restaurada</span>
-              </div>
+              <img src="/maos trabalhando.png" alt="Mãos trabalhando em restauração de joias" />
             </div>
             <div className="conceito-texto">
               <h2>Cada joia antiga carrega uma história.</h2>
@@ -95,12 +98,14 @@ function VintageRestauracao() {
           
           <div className="transformacao-grid">
             <div className="transformacao-item">
-              <div className="image-placeholder transformacao-img">
-                <span>IA: Antes - Anel antigo desgastado</span>
+              <div className="transformacao-img">
+                <img src="/antes.png" alt="Antes - Joia antiga" />
+                <p className="transformacao-label">Antes</p>
               </div>
               <div className="transformacao-seta">→</div>
-              <div className="image-placeholder transformacao-img">
-                <span>IA: Depois - Anel restaurado</span>
+              <div className="transformacao-img">
+                <img src="/depois.png" alt="Depois - Joia restaurada" />
+                <p className="transformacao-label">Depois</p>
               </div>
             </div>
           </div>

@@ -2,16 +2,97 @@
    ALIANÇAS PERSONALIZADAS PAGE - ALQUIMIA DO OURO
    ============================================ */
 
-.aliancas-intro {
-  font-family: var(--font-titulo);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.8;
-  color: var(--verde-musgo);
+/* ================================================
+   HERO
+   ================================================ */
+.aliancas-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--verde-musgo-escuro);
+  padding: 10rem 0 6rem;
 }
 
-/* Destaque */
+.aliancas-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.aliancas-hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, 
+      rgba(26, 51, 40, 1) 0%, 
+      rgba(45, 74, 62, 1) 50%,
+      rgba(35, 60, 48, 1) 100%
+    );
+}
+
+.aliancas-hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 2px 2px, rgba(184, 134, 11, 0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.aliancas-hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aliancas-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.aliancas-hero-title {
+  color: var(--off-white);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.aliancas-hero-title em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.aliancas-hero-texto {
+  font-family: var(--font-titulo);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(250, 248, 245, 0.85);
+  margin: 0;
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+/* ================================================
+   DESTAQUE
+   ================================================ */
 .destaque-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -19,8 +100,17 @@
   align-items: center;
 }
 
-.destaque-placeholder {
-  aspect-ratio: 16/10;
+.destaque-imagem {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.destaque-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .destaque-texto h2 {
@@ -136,4 +226,28 @@
   color: rgba(250, 248, 245, 0.8);
   font-size: 1.1rem;
   margin-bottom: var(--espacamento-lg);
+}
+
+/* ================================================
+   ANIMAÇÕES
+   ================================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================================
+   RESPONSIVO HERO
+   ================================================ */
+@media (max-width: 768px) {
+  .aliancas-hero {
+    min-height: 60vh;
+    padding: 8rem 0 4rem;
+  }
 }

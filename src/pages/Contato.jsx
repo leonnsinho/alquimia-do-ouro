@@ -5,21 +5,26 @@ function Contato() {
 
   return (
     <div className="page contato">
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1>Contato</h1>
-          <p className="subtitle">Vamos criar juntos</p>
+      
+      {/* ================================================
+          HERO - CONTATO
+          ================================================ */}
+      <section className="contato-hero">
+        <div className="contato-hero-bg">
+          <div className="contato-hero-gradient"></div>
+          <div className="contato-hero-pattern"></div>
         </div>
-      </section>
-
-      {/* Texto Principal */}
-      <section className="section section-lg">
-        <div className="container container-narrow text-center">
-          <p className="contato-intro">
-            Se você sente que sua história merece ser eternizada, 
-            estamos prontos para ouvir.
-          </p>
+        
+        <div className="container">
+          <div className="contato-hero-content">
+            <h1 className="contato-hero-title">
+              Vamos criar <em>juntos</em>
+            </h1>
+            <p className="contato-hero-texto">
+              Se você sente que sua história merece ser eternizada,
+              estamos prontos para ouvir.
+            </p>
+          </div>
         </div>
       </section>
 

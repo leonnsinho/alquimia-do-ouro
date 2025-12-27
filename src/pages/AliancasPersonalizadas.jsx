@@ -24,32 +24,35 @@ function AliancasPersonalizadas() {
 
   return (
     <div className="page aliancas-personalizadas">
-      {/* Hero */}
-      <section className="page-hero">
+      
+      {/* ================================================
+          HERO - ALIANÇAS PERSONALIZADAS
+          ================================================ */}
+      <section className="aliancas-hero">
+        <div className="aliancas-hero-bg">
+          <div className="aliancas-hero-gradient"></div>
+          <div className="aliancas-hero-pattern"></div>
+        </div>
+        
         <div className="container">
-          <h1>Alianças Personalizadas</h1>
-          <p className="subtitle">Histórias de amor eternizadas em ouro</p>
+          <div className="aliancas-hero-content">
+            <h1 className="aliancas-hero-title">
+              Alianças <em>Personalizadas</em>
+            </h1>
+            <p className="aliancas-hero-texto">
+              Histórias de amor eternizadas em ouro. Criamos alianças que representam
+              jornadas únicas — porque cada casal merece algo irrepetível.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Conceito Principal */}
-      <section className="section section-lg">
-        <div className="container container-narrow text-center">
-          <p className="aliancas-intro">
-            Criamos alianças que representam histórias reais, não padrões. 
-            Cada casal carrega uma jornada única — e suas alianças também devem ser.
-          </p>
-        </div>
-      </section>
-
-      {/* Imagem destaque */}
+      {/* Imagem destaque */}}
       <section className="section aliancas-destaque">
         <div className="container">
           <div className="destaque-grid">
             <div className="destaque-imagem">
-              <div className="image-placeholder destaque-placeholder">
-                <span>Imagem IA: Par de alianças personalizadas em ouro</span>
-              </div>
+              <img src="/Alianças.png" alt="Par de alianças personalizadas" />
             </div>
             <div className="destaque-texto">
               <h2>Mais que um símbolo. Uma extensão da história de vocês.</h2>

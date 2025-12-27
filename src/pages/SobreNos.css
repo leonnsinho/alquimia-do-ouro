@@ -251,10 +251,16 @@
 .filosofia-imagem {
   position: relative;
   z-index: 2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.filosofia-imagem .image-placeholder {
-  aspect-ratio: 4/5;
+.filosofia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .filosofia-imagem-accent {

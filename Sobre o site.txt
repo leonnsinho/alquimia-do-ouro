@@ -12,4 +12,171 @@ O trabalho é executar fielmente o briefing.
 Este projeto exige execução técnica e sensibilidade estética, 
 mas todas as decisões criativas já estão definidas no briefing. 
 Se você costuma "interpretar" ou "adaptar" briefings, não faça isso. 
-Precisamos que construa exatamente conforme especificado.
+Precisamos que construa exatamente conforme especificado:
+
+briefing:
+
+BRIEFING TÉCNICO E CRIATIVO – SITE INSTITUCIONAL
+ALQUIMIA DO OURO
+Este documento define 100% do site (estrutura, textos, storytelling, design e direção visual). O
+webdesigner não deve tomar decisões criaƟvas fora do que está descrito aqui. O trabalho é
+executar exatamente conforme este briefing.
+1. OBJETIVO DO SITE
+Criar um site insƟtucional de joalheria autoral de luxo, com foco em:
+ Posicionamento premium
+ Storytelling emocional
+ Autoridade artesanal (47 anos de tradição)
+ Geração de leads qualificados via WhatsApp
+ Não haverá e-commerce
+ Não haverá blog
+2. PÚBLICO-ALVO
+Mulheres de 28 a 55 anos, classe A/B, Brasil (Sorocaba e capitais).
+Buscam:
+ Exclusividade real
+ Status discreto
+ Significado emocional
+ Arte, espiritualidade e autenƟcidade
+Rejeitam:
+ Joias massificadas
+ Linguagem comercial agressiva
+ Layouts comuns ou genéricos
+3. TOM DE VOZ (OBRIGATÓRIO)
+ SofisƟcado
+ Sensorial
+ PoéƟco
+ Emocional
+ Atemporal
+ Proibido linguagem promocional comum
+ Proibido textos comerciais genéricos
+4. IDENTIDADE VISUAL (DIRETRIZES RÍGIDAS)
+Paleta de cores
+ Verde musgo profundo (fundo, áreas insƟtucionais)
+ Dourado escuro / ouro líquido (detalhes, divisórias, ícones)
+ Off-white quente (fundos claros)
+Tipografia
+ Títulos: Serif elegante (ex: Playfair Display, Cormorant, Libre Baskerville)
+ Textos: Sans serif fina (ex: Inter, Lato, HelveƟca Now)
+EsƟlo visual
+ Luxo editorial
+ Muito espaço em branco
+ Ritmo lento
+ Poucos elementos por dobra
+5. IMAGENS (100% GERADAS POR IA)
+EsƟlo das imagens
+ Macro photography de joias autorais
+ Texturas de ouro líquido
+ Pedras naturais brasileiras
+ Fundo escuro, dramáƟco, com iluminação suave
+Loja İsica
+ Reservar 1 seção com até 3 imagens da loja
+ Mesmo as imagens da loja devem ser geradas por IA por enquanto
+ Não usar banco de imagens comum
+ Não usar fotos genéricas de joias comerciais
+6. ESTRUTURA DO SITE (MAPA)
+1. Home
+2. Sobre Nós
+3. Joias Personalizadas
+4. Porƞólio
+5. Pedras Brasileiras & EnergéƟcas
+6. Vintage & Restauração
+7. Alianças Personalizadas
+8. Contato / Orçamento
+7. CONTEÚDO E LAYOUT – PÁGINA A PÁGINA
+HOME
+DOBRA 1 – HERO
+Imagem: Joia autoral ficơcia em ouro com pedra natural (IA)
+Headline:
+Eternize histórias em uma joia.
+Subheadline:
+Não criamos peças. Transformamos memórias, afetos e histórias em joias únicas, feitas sob
+medida.
+CTA principal:
+Solicitar desenho personalizado (WhatsApp)
+DOBRA 2 – CONCEITO
+Título:
+Uma joia que existe só para você.
+Texto:
+A Alquimia do Ouro nasce do encontro entre tradição, arte e emoção. Cada criação é única
+porque carrega a história de quem a usa. Não trabalhamos com coleções prontas. Criamos
+peças que não podem ser repeƟdas.
+DOBRA 3 – PILARES
+Apresentar 5 blocos com ícones minimalistas:
+1. Memória & Afeto
+Peças que preservam histórias e emoções.
+2. Exclusividade Real
+Nenhuma joia é reproduzida. Cada criação é one of one.
+3. Arte & Tradição
+47 anos de ourivesaria familiar.
+4. Energia & Cura
+Pedras brasileiras com significados simbólicos.
+5. Curadoria Profunda
+O cliente não precisa saber o que quer. Descobrimos juntos.
+DOBRA 4 – PROCESSO CRIATIVO
+Título:
+Sua história. Nosso ouro. Uma única joia.
+Etapas (visual horizontal):
+1. Conversa e escuta
+2. Curadoria e conceito
+3. Desenho exclusivo
+4. Criação artesanal
+DOBRA 5 – PEDRAS EM DESTAQUE
+Título:
+Cada pedra carrega uma intenção.
+Mini textos com links para página de pedras.
+DOBRA 6 – TRADIÇÃO
+Título:
+47 anos transformando ouro em significado.
+Texto:
+Uma história construída com as mãos, o tempo e o respeito pelo fazer artesanal.
+DOBRA 7 – CTA FINAL
+Texto:
+Ninguém terá uma igual.
+Botão:
+Criar minha joia exclusiva
+SOBRE NÓS
+NarraƟva longa e emocional.
+Texto base:
+A Alquimia do Ouro nasce de uma tradição familiar de 47 anos em ourivesaria. O que começou
+com ferramentas simples e muito cuidado, hoje se transforma em joias que carregam histórias,
+afetos e intenções.
+Criamos para quem entende que luxo não é excesso — é significado.
+JOIAS PERSONALIZADAS
+Título:
+Joias one of one.
+Texto:
+Uma joia personalizada não é escolhida. Ela é criada. Cada detalhe nasce de uma escuta
+profunda, onde transformamos senƟmentos em forma, metal e pedra.
+PORTFÓLIO
+Grid de imagens ficơcias geradas por IA.
+Cada peça com legenda curta e poéƟca.
+PEDRAS BRASILEIRAS & ENERGÉTICAS
+Definir exatamente estas pedras:
+Quartzo Rosa
+Energia do amor, afeto e cura emocional.
+AmeƟsta
+Clareza mental, espiritualidade e proteção.
+Citrino
+Prosperidade, criaƟvidade e vitalidade.
+Ônix
+Força, proteção e estabilidade emocional.
+Água-marinha
+Calma, comunicação e equilíbrio.
+VINTAGE & RESTAURAÇÃO
+Texto:
+Algumas joias não precisam ser subsƟtuídas. Precisam ser transformadas. Restauramos e
+ressignificamos peças anƟgas, preservando suas memórias.
+ALIANÇAS PERSONALIZADAS
+Texto:
+Criamos alianças que representam histórias reais, não padrões. Cada casal carrega uma jornada
+única — e suas alianças também devem ser.
+CONTATO / ORÇAMENTO
+Texto:
+Se você sente que sua história merece ser eternizada, estamos prontos para ouvir.
+Botão grande de WhatsApp.
+8. ELEMENTOS FIXOS
+ Botão flutuante WhatsApp
+ Animações suaves (fade, scroll lento)
+ Layout responsivo
+9. FRASE-CHAVE DO SITE
+“O cliente não precisa saber o que quer. Nós descobrimos com ele.”
+Este briefing deve ser seguido integralmente.

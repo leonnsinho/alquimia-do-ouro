@@ -1252,21 +1252,15 @@ section.conceito .conceito-badge-texto {
   margin-bottom: 2rem;
 }
 
-.pedra-card-glow {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--pedra-cor), transparent 70%);
-  opacity: 0.3;
-  filter: blur(15px);
-  transition: opacity 0.4s ease;
+.pedra-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
 }
 
-.pedra-card:hover .pedra-card-glow {
-  opacity: 0.5;
+.pedra-card:hover .pedra-card-image {
+  transform: scale(1.1) translateY(-5px);
 }
 
 .pedra-card-stone {

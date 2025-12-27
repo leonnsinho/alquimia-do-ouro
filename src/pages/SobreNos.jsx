@@ -87,9 +87,7 @@ function SobreNos() {
           <div className="filosofia-grid">
             <div className="filosofia-visual">
               <div className="filosofia-imagem">
-                <div className="image-placeholder">
-                  <span>Imagem IA: Mãos do artesão trabalhando ouro com delicadeza</span>
-                </div>
+                <img src="/trabalhando no ouro.png" alt="Artesão trabalhando em ouro" />
               </div>
               <div className="filosofia-imagem-accent"></div>
             </div>

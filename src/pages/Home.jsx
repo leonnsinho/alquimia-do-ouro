@@ -119,29 +119,25 @@ function Home() {
       nome: 'Quartzo Rosa', 
       energia: 'Amor e cura emocional',
       descricao: 'A pedra do amor incondicional. Suaviza o coração e atrai harmonia.',
-      cor: '#E8B4B8',
-      corSecundaria: '#D4A0A4'
+      imagem: '/quartzo sem fundo.png'
     },
     { 
       nome: 'Ametista', 
       energia: 'Clareza e proteção',
       descricao: 'Conecta o espiritual ao terreno. Traz paz interior e intuição.',
-      cor: '#9966CC',
-      corSecundaria: '#7A4DB8'
+      imagem: '/ametista sem fundo.png'
     },
     { 
       nome: 'Citrino', 
       energia: 'Prosperidade e vitalidade',
       descricao: 'A pedra do sol. Atrai abundância e renova as energias.',
-      cor: '#E4A010',
-      corSecundaria: '#C88A00'
+      imagem: '/citrino sem fundo.png'
     },
     { 
       nome: 'Água-marinha', 
       energia: 'Calma e equilíbrio',
       descricao: 'A essência do mar. Acalma a mente e traz serenidade.',
-      cor: '#7FCDCD',
-      corSecundaria: '#5BB5B5'
+      imagem: '/agua marinha sem fundo.png'
     }
   ]
 
@@ -368,18 +364,13 @@ function Home() {
                 <div 
                   key={index} 
                   className="pedra-card"
-                  style={{ 
-                    '--pedra-cor': pedra.cor,
-                    '--pedra-cor-secundaria': pedra.corSecundaria
-                  }}
                 >
                   <div className="pedra-card-visual">
-                    <div className="pedra-card-glow"></div>
-                    <div className="pedra-card-stone">
-                      <div className="pedra-card-facets"></div>
-                      <div className="pedra-card-shine"></div>
-                    </div>
-                    <div className="pedra-card-reflection"></div>
+                    <img 
+                      src={pedra.imagem} 
+                      alt={pedra.nome}
+                      className="pedra-card-image"
+                    />
                   </div>
                   <div className="pedra-card-content">
                     <h4 className="pedra-card-nome">{pedra.nome}</h4>
