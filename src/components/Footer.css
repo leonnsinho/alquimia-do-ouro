@@ -22,24 +22,15 @@
 
 .footer-logo {
   display: flex;
-  align-items: baseline;
-  gap: 0.4rem;
+  align-items: center;
   text-decoration: none;
   margin-bottom: var(--espacamento-md);
 }
 
-.footer-logo-text {
-  font-family: var(--font-titulo);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--off-white);
-}
-
-.footer-logo-separator {
-  font-family: var(--font-titulo);
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--dourado);
+.footer-logo-image {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-tagline {
@@ -124,7 +115,23 @@
   font-size: 0.9rem;
   font-style: italic;
   color: var(--dourado);
+  margin: 0 0 0.5rem 0;
+}
+
+.footer-designer {
+  font-size: 0.8rem;
+  color: rgba(250, 248, 245, 0.5);
   margin: 0;
+}
+
+.footer-designer a {
+  color: var(--dourado);
+  text-decoration: none;
+  transition: var(--transicao-suave);
+}
+
+.footer-designer a:hover {
+  color: var(--off-white);
 }
 
 /* Responsivo */

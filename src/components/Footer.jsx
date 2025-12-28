@@ -10,9 +10,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <span className="footer-logo-text">Alquimia</span>
-              <span className="footer-logo-separator">do</span>
-              <span className="footer-logo-text">Ouro</span>
+              <img src="/logo dourada sem fundo.png" alt="Alquimia do Ouro" className="footer-logo-image" />
             </Link>
             <p className="footer-tagline">
               Transformamos memórias, afetos e histórias em joias únicas.
@@ -59,6 +57,9 @@ function Footer() {
           </p>
           <p className="footer-tradition">
             47 anos transformando ouro em significado.
+          </p>
+          <p className="footer-designer">
+            Designed by <a href="https://stormcore.com.br" target="_blank" rel="noopener noreferrer">Stormcore</a>
           </p>
         </div>
       </div>

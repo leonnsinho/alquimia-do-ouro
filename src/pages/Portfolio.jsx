@@ -9,55 +9,64 @@ function Portfolio() {
       id: 1,
       titulo: 'Aurora',
       legenda: 'Onde o primeiro raio de sol encontra o ouro.',
-      tipo: 'Anel'
+      tipo: 'Anel',
+      imagem: '/aurora.png'
     },
     {
       id: 2,
       titulo: 'Raízes',
       legenda: 'O que nos conecta ao que veio antes.',
-      tipo: 'Colar'
+      tipo: 'Colar',
+      imagem: '/raizes.png'
     },
     {
       id: 3,
       titulo: 'Silêncio',
       legenda: 'A beleza do que não precisa ser dito.',
-      tipo: 'Brincos'
+      tipo: 'Brincos',
+      imagem: '/silencio.png'
     },
     {
       id: 4,
       titulo: 'Travessia',
       legenda: 'Cada curva conta uma jornada.',
-      tipo: 'Pulseira'
+      tipo: 'Pulseira',
+      imagem: '/travessia.png'
     },
     {
       id: 5,
       titulo: 'Memória',
       legenda: 'O tempo transformado em forma.',
-      tipo: 'Anel'
+      tipo: 'Anel',
+      imagem: '/memoria.png'
     },
     {
       id: 6,
       titulo: 'Constelação',
       legenda: 'Fragmentos de luz que se encontram.',
-      tipo: 'Colar'
+      tipo: 'Colar',
+      imagem: '/constelação.png'
     },
     {
       id: 7,
       titulo: 'Origem',
       legenda: 'De onde tudo começa e para onde tudo volta.',
-      tipo: 'Anel'
+      tipo: 'Anel',
+      imagem: '/origem.png'
     },
     {
       id: 8,
       titulo: 'Véu',
       legenda: 'Entre o visível e o sentido.',
-      tipo: 'Brincos'
+      tipo: 'Brincos',
+      imagem: '/veu.png'
     },
     {
       id: 9,
       titulo: 'Abraço',
       legenda: 'O ouro que envolve como afeto.',
-      tipo: 'Pulseira'
+      tipo: 'Pulseira',
+      imagem: '/abraço.png'
     }
   ]
 
@@ -95,9 +104,11 @@ function Portfolio() {
             {pecas.map((peca) => (
               <article key={peca.id} className="portfolio-card">
                 <div className="portfolio-card-imagem">
-                  <div className="image-placeholder">
-                    <span>Imagem IA: {peca.tipo} "{peca.titulo}"</span>
-                  </div>
+                  <img 
+                    src={peca.imagem} 
+                    alt={peca.titulo}
+                    className="portfolio-foto"
+                  />
                   <div className="portfolio-card-tipo">
                     <span>{peca.tipo}</span>
                   </div>

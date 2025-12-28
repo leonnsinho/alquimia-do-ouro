@@ -32,24 +32,20 @@
 /* Logo */
 .logo {
   display: flex;
-  align-items: baseline;
-  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 
-.logo-text {
-  font-family: var(--font-titulo);
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: var(--off-white);
-  letter-spacing: 0.02em;
+.logo-image {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transicao-suave);
 }
 
-.logo-separator {
-  font-family: var(--font-titulo);
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--dourado);
+.header-scrolled .logo-image {
+  height: 38px;
 }
 
 /* Navegação */

@@ -88,29 +88,6 @@ function AliancasPersonalizadas() {
         </div>
       </section>
 
-      {/* Galeria */}
-      <section className="section section-lg aliancas-galeria">
-        <div className="container">
-          <h2 className="text-center">Criações para Casais</h2>
-          <div className="divider divider-center"></div>
-          
-          <div className="galeria-aliancas">
-            <div className="image-placeholder galeria-alianca-img">
-              <span>IA: Aliança clássica em ouro amarelo</span>
-            </div>
-            <div className="image-placeholder galeria-alianca-img">
-              <span>IA: Aliança texturizada</span>
-            </div>
-            <div className="image-placeholder galeria-alianca-img">
-              <span>IA: Aliança com diamante</span>
-            </div>
-            <div className="image-placeholder galeria-alianca-img">
-              <span>IA: Aliança em ouro rosé</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="section section-lg aliancas-cta bg-verde text-center">
         <div className="container container-narrow">

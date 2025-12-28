@@ -54,61 +54,6 @@ function Contato() {
         </div>
       </section>
 
-      {/* Informações */}
-      <section className="section section-lg contato-info bg-off-white-quente">
-        <div className="container">
-          <div className="info-grid">
-            <div className="info-item">
-              <h3>Localização</h3>
-              <p>Sorocaba, São Paulo</p>
-              <p className="info-detalhe">Atendimento com hora marcada</p>
-            </div>
-            <div className="info-item">
-              <h3>Horário</h3>
-              <p>Segunda a Sexta</p>
-              <p className="info-detalhe">9h às 18h</p>
-            </div>
-            <div className="info-item">
-              <h3>Atendimento</h3>
-              <p>Personalizado</p>
-              <p className="info-detalhe">Exclusivo e sob agendamento</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mapa ou imagem da loja */}
-      <section className="section contato-loja">
-        <div className="container">
-          <div className="loja-grid">
-            <div className="loja-imagem">
-              <div className="image-placeholder loja-placeholder">
-                <span>Imagem IA: Fachada elegante da loja</span>
-              </div>
-            </div>
-            <div className="loja-texto">
-              <h2>Visite Nosso Ateliê</h2>
-              <p>
-                Nosso espaço foi pensado para receber você com exclusividade. 
-                Aqui, cada conversa acontece com calma e privacidade.
-              </p>
-              <p>
-                Agende sua visita para conhecer nosso processo criativo 
-                e descobrir como podemos eternizar sua história.
-              </p>
-              <a 
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                Agendar visita
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Frase final */}
       <section className="section section-lg contato-frase bg-verde text-center">
         <div className="container container-narrow">

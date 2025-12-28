@@ -35,9 +35,7 @@ function Header() {
     <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-text">Alquimia</span>
-          <span className="logo-separator">do</span>
-          <span className="logo-text">Ouro</span>
+          <img src="/nome.png" alt="Alquimia do Ouro" className="logo-image" />
         </Link>
 
         <button 
