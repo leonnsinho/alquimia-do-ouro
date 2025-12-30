@@ -20,7 +20,7 @@ function SobreNos() {
           <div className="sobre-hero-content">
             <span className="sobre-hero-label">Nossa História</span>
             <h1 className="sobre-hero-title">
-              Uma tradição de <em>47 anos</em><br/>
+              Uma tradição familiar<br/>
               em ourivesaria
             </h1>
             <div className="sobre-hero-ornament">
@@ -30,6 +30,7 @@ function SobreNos() {
               </svg>
               <span></span>
             </div>
+            <p className="sobre-hero-selo">47 anos de tradição no ofício da ourivesaria</p>
           </div>
         </div>
       </section>
@@ -40,21 +41,102 @@ function SobreNos() {
       <section className="sobre-narrativa">
         <div className="container">
           <div className="narrativa-content">
-            <div className="narrativa-numero">
-              <span>1978</span>
-            </div>
             <div className="narrativa-texto">
               <p className="narrativa-destaque">
-                A Alquimia do Ouro nasce de uma tradição familiar de 47 anos em ourivesaria.
+                A Alquimia do Ouro nasceu do encontro entre histórias, ideias e o desejo de criar algo verdadeiramente único.
               </p>
               <p>
-                O que começou com ferramentas simples e muito cuidado, hoje se transforma em 
-                joias que carregam histórias, afetos e intenções. Cada peça que sai das nossas 
-                mãos carrega a essência de quem a encomendou.
+                Durante anos, Paula Copertino Garcia foi cliente de Daniele Ribeiro, encomendando joias 
+                exclusivas, criadas a partir de conversas, referências pessoais e sentimentos que não cabiam em 
+                peças prontas. Cada joia nascia do diálogo: Paula descrevia, imaginava, sonhava — e Daniele 
+                transformava essas ideias em peças singulares, feitas à mão, sem repetir formas ou conceitos.
               </p>
               <p>
-                Não trabalhamos com produção em série. Não seguimos tendências passageiras. 
-                <strong>Criamos joias que atravessam gerações.</strong>
+                Daniele atua há mais de 15 anos como ourives, com sua experiência construída dentro de uma 
+                joalheria familiar, onde teve contato profundo com o ofício, a técnica e o cuidado artesanal. Com o 
+                tempo, surgiu nela o desejo de inovar, de criar joias com identidade própria, explorando novas 
+                possibilidades, processos e tecnologias.
+              </p>
+              <p>
+                Foi em uma dessas conversas, durante a entrega de uma joia, que a ideia ganhou forma. Daniele 
+                compartilhava o sonho de ter seu próprio ateliê, com estrutura e máquinas que permitissem criar 
+                peças diferentes do que o mercado tradicional oferecia. Paula, que sempre acreditou no poder das 
+                joias como extensão da história de quem as usa, decidiu caminhar junto.
+              </p>
+              <p>
+                Para dar sustentação a esse novo projeto, Leandro Pyaia Garcia entrou como sócio e 
+                administrador financeiro, trazendo equilíbrio, organização e estrutura para que o sonho pudesse 
+                crescer de forma sólida.
+              </p>
+              <p>
+                <strong>Assim surgiu a Alquimia do Ouro:</strong> um ateliê onde ideias se transformam em joias, memórias 
+                ganham forma e cada criação carrega significado. Aqui, nada é comum, nada é feito em série.
+                Cada peça nasce de uma escuta atenta, de uma troca verdadeira e do cuidado artesanal aliado à 
+                tecnologia.
+              </p>
+              <p className="narrativa-destaque">
+                A Alquimia do Ouro representa a transformação — da ideia em matéria, da memória em joia, do 
+                sentimento em algo eterno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================
+          OS CRIADORES
+          ================================================ */}
+      <section className="sobre-criadores">
+        <div className="container">
+          <div className="criadores-header">
+            <span className="section-label">Quem Cria</span>
+            <h2>Os Criadores</h2>
+            <div className="divider divider-center"></div>
+          </div>
+
+          <div className="criadores-grid">
+            <div className="criador-card">
+              <div className="criador-icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M20 36C12 36 8 28 8 20C16 20 24 24 24 32"/>
+                  <path d="M44 36C52 36 56 28 56 20C48 20 40 24 40 32"/>
+                  <path d="M24 32C24 44 28 56 32 56C36 56 40 44 40 32"/>
+                </svg>
+              </div>
+              <h3>Daniele Ribeiro</h3>
+              <p className="criador-cargo">Ourives</p>
+              <p className="criador-descricao">
+                Atua há 15 anos no ofício, responsável pela criação e execução das joias.
+              </p>
+            </div>
+
+            <div className="criador-card">
+              <div className="criador-icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="32" cy="32" r="24"/>
+                  <path d="M32 16v8M32 40v8M16 32h8M40 32h8"/>
+                  <circle cx="32" cy="32" r="8"/>
+                </svg>
+              </div>
+              <h3>Paula Copertino Garcia</h3>
+              <p className="criador-cargo">Atendimento e Curadoria</p>
+              <p className="criador-descricao">
+                Responsável por entender e traduzir as histórias dos clientes em conceitos de joias.
+              </p>
+            </div>
+
+            <div className="criador-card">
+              <div className="criador-icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="12" y="12" width="40" height="40" rx="4"/>
+                  <path d="M12 24h40M24 12v40"/>
+                  <circle cx="38" cy="38" r="6"/>
+                </svg>
+              </div>
+              <h3>Leandro Pyaia Garcia</h3>
+              <p className="criador-cargo">Administrador Financeiro</p>
+              <p className="criador-descricao">
+                Responsável pela gestão e estrutura administrativa do ateliê.
               </p>
             </div>
           </div>
@@ -141,7 +223,7 @@ function SobreNos() {
               <h3 className="valor-titulo">Tradição</h3>
               <div className="valor-linha"></div>
               <p className="valor-texto">
-                47 anos de conhecimento transmitido de geração em geração. 
+                Conhecimento transmitido de geração em geração. 
                 A sabedoria do passado guiando as mãos do presente.
               </p>
             </div>

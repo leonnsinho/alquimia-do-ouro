@@ -184,8 +184,10 @@
 
 .processo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--espacamento-lg);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espacamento-xl);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .processo-item {

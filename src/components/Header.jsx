@@ -5,6 +5,7 @@ import './Header.css'
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isServicosOpen, setIsServicosOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -18,6 +19,7 @@ function Header() {
 
   useEffect(() => {
     setIsMenuOpen(false)
+    setIsServicosOpen(false)
   }, [location])
 
   const navLinks = [
@@ -26,9 +28,13 @@ function Header() {
     { path: '/joias-personalizadas', label: 'Joias Personalizadas' },
     { path: '/portfolio', label: 'Portfólio' },
     { path: '/pedras-brasileiras', label: 'Pedras Brasileiras' },
-    { path: '/vintage-restauracao', label: 'Vintage & Restauração' },
     { path: '/aliancas-personalizadas', label: 'Alianças' },
     { path: '/contato', label: 'Contato' },
+  ]
+
+  const servicosLinks = [
+    { path: '/consertos-joias', label: 'Consertos de Joias' },
+    { path: '/vintage-restauracao', label: 'Vintage & Restauração' },
   ]
 
   return (
@@ -60,6 +66,31 @@ function Header() {
                 </Link>
               </li>
             ))}
+            
+            <li 
+              className="nav-item-dropdown"
+              onMouseEnter={() => setIsServicosOpen(true)}
+              onMouseLeave={() => setIsServicosOpen(false)}
+            >
+              <span 
+                className={`nav-link nav-dropdown-toggle ${servicosLinks.some(link => link.path === location.pathname) ? 'active' : ''}`}
+                onClick={() => setIsServicosOpen(!isServicosOpen)}
+              >
+                Serviços
+              </span>
+              <ul className={`nav-dropdown ${isServicosOpen ? 'nav-dropdown-open' : ''}`}>
+                {servicosLinks.map((link) => (
+                  <li key={link.path}>
+                    <Link 
+                      to={link.path} 
+                      className={`nav-dropdown-link ${location.pathname === link.path ? 'active' : ''}`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>

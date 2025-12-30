@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 
 function Home() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de solicitar um desenho personalizado.')
+  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de criar uma joia personalizada.')
 
   const pilares = [
     {
@@ -14,7 +14,7 @@ function Home() {
         </svg>
       ),
       titulo: 'Memória & Afeto',
-      texto: 'Peças que preservam histórias e emoções.'
+      texto: 'Transformamos seus sentimentos em joias que atravessam gerações.'
     },
     {
       icone: (
@@ -23,7 +23,7 @@ function Home() {
         </svg>
       ),
       titulo: 'Exclusividade Real',
-      texto: 'Nenhuma joia é reproduzida. Cada criação é one of one.'
+      texto: 'Zero produção em série. Cada peça é única e irrepetível.'
     },
     {
       icone: (
@@ -33,7 +33,7 @@ function Home() {
         </svg>
       ),
       titulo: 'Arte & Tradição',
-      texto: '47 anos de ourivesaria familiar.'
+      texto: 'Ourivesaria familiar com décadas de experiência.'
     },
     {
       icone: (
@@ -89,8 +89,8 @@ function Home() {
     },
     { 
       numero: '03', 
-      titulo: 'Desenho exclusivo',
-      descricao: 'Criamos um design único que só existe para você. Cada traço nasce da sua história.',
+      titulo: 'Conceito exclusivo',
+      descricao: 'Desenvolvemos um conceito único que só existe para você. Cada elemento nasce da sua história.',
       icone: (
         <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M44 8L56 20L24 52L8 56L12 40L44 8Z"/>
@@ -102,7 +102,7 @@ function Home() {
     { 
       numero: '04', 
       titulo: 'Criação artesanal',
-      descricao: 'Mãos experientes de 47 anos dão vida à sua joia. Cada detalhe é trabalhado com paciência e arte.',
+      descricao: 'Mãos experientes dão vida à sua joia. Cada detalhe é trabalhado com paciência e arte.',
       icone: (
         <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M20 36C12 36 8 28 8 20C16 20 24 24 24 32"/>
@@ -168,7 +168,7 @@ function Home() {
         <div className="hero-content">
           <div className="hero-label">
             <span className="hero-label-line"></span>
-            <span className="hero-label-text">Joalheria Autoral · Desde 1978</span>
+            <span className="hero-label-text">Joalheria Autoral</span>
             <span className="hero-label-line"></span>
           </div>
 
@@ -178,8 +178,8 @@ function Home() {
           </h1>
 
           <p className="hero-description">
-            Não criamos peças. Transformamos memórias, afetos e histórias 
-            em joias únicas, feitas sob medida.
+            Transformamos suas memórias, afetos e histórias em joias únicas. 
+            Não trabalhamos com peças prontas — cada criação existe apenas para você.
           </p>
 
           <a 
@@ -189,7 +189,7 @@ function Home() {
             className="hero-button"
           >
             <span className="hero-button-bg"></span>
-            <span className="hero-button-text">Solicitar desenho personalizado</span>
+            <span className="hero-button-text">Criar joia personalizada</span>
             <span className="hero-button-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -242,9 +242,9 @@ function Home() {
               </div>
               
               <p className="conceito-texto">
-                A Alquimia do Ouro nasce do encontro entre tradição, arte e emoção. 
-                Cada criação é única porque carrega a história de quem a usa. 
-                Não trabalhamos com coleções prontas. Criamos peças que não podem ser repetidas.
+                Na Alquimia do Ouro, você não escolhe uma joia pronta. Você cria a sua, com Daniele, 
+                Paula e Leandro — que ouvem sua história e a transformam em uma peça que só existe para você. 
+                Cada joia é única. Nenhuma criação é repetida. Nunca.
               </p>
               
               <div className="conceito-badge">
@@ -497,7 +497,7 @@ function Home() {
             </a>
             
             <p className="cta-frase-chave">
-              "O cliente não precisa saber o que quer. <em>Nós descobrimos com ele.</em>"
+              "Você não precisa saber exatamente o que quer. <em>Daniele e Paula descobrem com você.</em>"
             </p>
           </div>
         </div>

@@ -112,6 +112,16 @@
   opacity: 0.7;
 }
 
+.sobre-hero-selo {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(250, 248, 245, 0.6);
+  animation: fadeIn 0.8s ease 0.6s both;
+}
+
 /* ================================================
    NARRATIVA PRINCIPAL
    ================================================ */
@@ -121,10 +131,6 @@
 }
 
 .narrativa-content {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 4rem;
-  align-items: start;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -132,6 +138,7 @@
 .narrativa-numero {
   position: sticky;
   top: 120px;
+  display: none;
 }
 
 .narrativa-numero span {
@@ -144,7 +151,7 @@
 }
 
 .narrativa-texto {
-  padding-top: 1rem;
+  padding: 0 2rem;
 }
 
 .narrativa-destaque {
@@ -167,6 +174,86 @@
 .narrativa-texto strong {
   color: var(--verde-musgo);
   font-weight: 500;
+}
+
+/* ================================================
+   OS CRIADORES
+   ================================================ */
+.sobre-criadores {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.criadores-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.criadores-header h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: var(--verde-musgo-escuro);
+  margin: 1rem 0;
+}
+
+.criadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.criador-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--off-white-quente);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.criador-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(45, 74, 62, 0.1);
+}
+
+.criador-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--dourado);
+  border-radius: 50%;
+  color: var(--dourado);
+}
+
+.criador-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.criador-card h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--verde-musgo-escuro);
+  margin-bottom: 0.5rem;
+}
+
+.criador-cargo {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 1rem;
+}
+
+.criador-descricao {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--cinza-texto);
 }
 
 /* ================================================

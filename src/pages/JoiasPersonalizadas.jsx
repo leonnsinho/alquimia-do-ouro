@@ -69,15 +69,6 @@ function JoiasPersonalizadas() {
           <div className="processo-grid">
             <div className="processo-item">
               <img 
-                src="/Esboços e desenhos técnicos de joias sobre mesa de trabalho.png" 
-                alt="Esboços e desenhos de joias"
-                className="processo-foto"
-              />
-              <h3>Escuta & Design</h3>
-              <p>Cada criação começa com uma conversa profunda e desenhos exclusivos.</p>
-            </div>
-            <div className="processo-item">
-              <img 
                 src="/Ferramentas de ourivesaria e metais preciosos sendo trabalhados.png" 
                 alt="Ferramentas de ourivesaria"
                 className="processo-foto"

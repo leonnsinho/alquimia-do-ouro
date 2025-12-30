@@ -56,7 +56,7 @@ function Footer() {
             © {currentYear} Alquimia do Ouro. Todos os direitos reservados.
           </p>
           <p className="footer-tradition">
-            47 anos transformando ouro em significado.
+            47 anos de tradição no ofício da ourivesaria
           </p>
           <p className="footer-designer">
             Designed by <a href="https://stormcore.com.br" target="_blank" rel="noopener noreferrer">Stormcore</a>
