@@ -100,10 +100,27 @@
   overflow: hidden;
 }
 
-.citacao-content {
-  text-align: center;
-  max-width: 800px;
+.citacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacamento-xl);
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.citacao-imagem {
+  position: relative;
+  z-index: 2;
+}
+
+.citacao-placeholder {
+  aspect-ratio: 4/5;
+  border-radius: 8px;
+}
+
+.citacao-content {
+  text-align: left;
   padding: 0;
   border: none;
   position: relative;
@@ -124,12 +141,75 @@
   font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 300;
   line-height: 1.4;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .citacao-destaque em {
   font-style: italic;
   color: var(--dourado);
+}
+
+.citacao-explicacao {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--cinza-texto);
+  margin: 0;
+}
+
+/* ================================================
+   GALERIA DE PROCESSOS
+   ================================================ */
+.joias-processo {
+  padding: 8rem 0;
+  background: var(--off-white-quente);
+}
+
+.processo-header {
+  text-align: center;
+  margin-bottom: var(--espacamento-xl);
+}
+
+.processo-header h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--verde-musgo);
+  margin-bottom: var(--espacamento-sm);
+}
+
+.processo-header p {
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  color: var(--cinza-texto);
+  font-style: italic;
+}
+
+.processo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacamento-lg);
+}
+
+.processo-item {
+  text-align: center;
+}
+
+.processo-placeholder {
+  aspect-ratio: 4/5;
+  margin-bottom: var(--espacamento-md);
+  border-radius: 8px;
+}
+
+.processo-item h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.35rem;
+  color: var(--dourado);
+  margin-bottom: var(--espacamento-xs);
+}
+
+.processo-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--cinza-texto);
+  margin: 0;
 }
 
 /* ================================================
@@ -263,6 +343,23 @@
   
   .joias-citacao {
     padding: 5rem 0;
+  }
+  
+  .citacao-grid {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
+  }
+  
+  .citacao-content {
+    text-align: center;
+  }
+  
+  .joias-processo {
+    padding: 5rem 0;
+  }
+  
+  .processo-grid {
+    grid-template-columns: 1fr;
   }
   
   .joias-cta-final {

@@ -149,6 +149,15 @@ function Home() {
       <section className="hero">
         {/* Background com gradiente e elementos decorativos */}
         <div className="hero-bg">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="hero-bg-video"
+          >
+            <source src="/video-hero.mp4" type="video/mp4" />
+          </video>
           <div className="hero-bg-gradient"></div>
           <div className="hero-bg-glow hero-bg-glow-1"></div>
           <div className="hero-bg-glow hero-bg-glow-2"></div>
@@ -208,30 +217,40 @@ function Home() {
         </div>
         
         <div className="container">
-          <div className="conceito-content">
-            <span className="conceito-label">Nossa Essência</span>
-            
-            <h2 className="conceito-titulo">
-              Uma joia que existe <em>só para você.</em>
-            </h2>
-            
-            <div className="conceito-ornament">
-              <span></span>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z"/>
-              </svg>
-              <span></span>
+          <div className="conceito-grid">
+            <div className="conceito-imagem">
+              <img 
+                src="/Mãos de ourives trabalhando delicadamente ouro derretido em forma líquida dourada brilhante.png" 
+                alt="Ourives trabalhando ouro derretido"
+                className="conceito-foto"
+              />
             </div>
             
-            <p className="conceito-texto">
-              A Alquimia do Ouro nasce do encontro entre tradição, arte e emoção. 
-              Cada criação é única porque carrega a história de quem a usa. 
-              Não trabalhamos com coleções prontas. Criamos peças que não podem ser repetidas.
-            </p>
-            
-            <div className="conceito-badge">
-              <span className="conceito-badge-numero">47</span>
-              <span className="conceito-badge-texto">anos de tradição</span>
+            <div className="conceito-content">
+              <span className="conceito-label">Nossa Essência</span>
+              
+              <h2 className="conceito-titulo">
+                Uma joia que existe <em>só para você.</em>
+              </h2>
+              
+              <div className="conceito-ornament">
+                <span></span>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z"/>
+                </svg>
+                <span></span>
+              </div>
+              
+              <p className="conceito-texto">
+                A Alquimia do Ouro nasce do encontro entre tradição, arte e emoção. 
+                Cada criação é única porque carrega a história de quem a usa. 
+                Não trabalhamos com coleções prontas. Criamos peças que não podem ser repetidas.
+              </p>
+              
+              <div className="conceito-badge">
+                <span className="conceito-badge-numero">47</span>
+                <span className="conceito-badge-texto">anos de tradição</span>
+              </div>
             </div>
           </div>
         </div>

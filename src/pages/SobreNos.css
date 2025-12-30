@@ -453,17 +453,21 @@
 
 .atelie-galeria {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
-.atelie-img .image-placeholder {
-  aspect-ratio: 4/3;
-  height: 100%;
+.atelie-img {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.atelie-img-grande .image-placeholder {
-  aspect-ratio: auto;
+.atelie-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ================================================
@@ -609,10 +613,6 @@
   
   .atelie-galeria {
     grid-template-columns: 1fr 1fr;
-  }
-  
-  .atelie-img-grande {
-    grid-column: span 2;
   }
 }
 

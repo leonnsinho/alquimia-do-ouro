@@ -33,14 +33,68 @@ function JoiasPersonalizadas() {
           ================================================ */}
       <section className="joias-citacao">
         <div className="container">
-          <blockquote className="citacao-content">
-            <p className="citacao-frase">
-              O cliente não precisa saber o que quer.
-            </p>
-            <p className="citacao-destaque">
-              <em>Nós descobrimos com ele.</em>
-            </p>
-          </blockquote>
+          <div className="citacao-grid">
+            <div className="citacao-imagem">
+              <img 
+                src="/Close-up de mãos artesãs moldando ouro com precisão e delicadeza.png" 
+                alt="Mãos artesãs moldando ouro"
+                className="citacao-foto"
+              />
+            </div>
+            <blockquote className="citacao-content">
+              <p className="citacao-frase">
+                O cliente não precisa saber o que quer.
+              </p>
+              <p className="citacao-destaque">
+                <em>Nós descobrimos com ele.</em>
+              </p>
+              <p className="citacao-explicacao">
+                Cada joia nasce de um processo colaborativo. Ouvimos profundamente, 
+                interpretamos emoções e traduzimos histórias em design exclusivo.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================
+          GALERIA DE PROCESSOS
+          ================================================ */}
+      <section className="joias-processo">
+        <div className="container">
+          <div className="processo-header">
+            <h2>Do Conceito à Criação</h2>
+            <p>Veja como transformamos ideias em joias únicas</p>
+          </div>
+          <div className="processo-grid">
+            <div className="processo-item">
+              <img 
+                src="/Esboços e desenhos técnicos de joias sobre mesa de trabalho.png" 
+                alt="Esboços e desenhos de joias"
+                className="processo-foto"
+              />
+              <h3>Escuta & Design</h3>
+              <p>Cada criação começa com uma conversa profunda e desenhos exclusivos.</p>
+            </div>
+            <div className="processo-item">
+              <img 
+                src="/Ferramentas de ourivesaria e metais preciosos sendo trabalhados.png" 
+                alt="Ferramentas de ourivesaria"
+                className="processo-foto"
+              />
+              <h3>Artesanato</h3>
+              <p>Técnicas tradicionais de ourivesaria executadas com maestria.</p>
+            </div>
+            <div className="processo-item">
+              <img 
+                src="/Joia finalizada em embalagem premium elegante.png" 
+                alt="Joia finalizada em embalagem"
+                className="processo-foto"
+              />
+              <h3>Entrega Única</h3>
+              <p>Sua joia chega pronta para ser eternizada em memórias.</p>
+            </div>
+          </div>
         </div>
       </section>
 

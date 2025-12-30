@@ -210,20 +210,19 @@ function SobreNos() {
           </div>
           
           <div className="atelie-galeria">
-            <div className="atelie-img atelie-img-grande">
-              <div className="image-placeholder">
-                <span>Imagem IA: Vista ampla do ateliê</span>
-              </div>
+            <div className="atelie-img">
+              <img 
+                src="/Bancada de trabalho.png" 
+                alt="Bancada de trabalho"
+                className="atelie-foto"
+              />
             </div>
             <div className="atelie-img">
-              <div className="image-placeholder">
-                <span>Imagem IA: Bancada de trabalho</span>
-              </div>
-            </div>
-            <div className="atelie-img">
-              <div className="image-placeholder">
-                <span>Imagem IA: Área de atendimento</span>
-              </div>
+              <img 
+                src="/Área de atendimento.png" 
+                alt="Área de atendimento"
+                className="atelie-foto"
+              />
             </div>
           </div>
         </div>
