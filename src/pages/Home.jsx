@@ -197,15 +197,6 @@ function Home() {
             </span>
           </a>
         </div>
-
-        {/* Badge de tradição */}
-        <div className="hero-tradition-badge">
-          <div className="hero-tradition-number">47</div>
-          <div className="hero-tradition-text">
-            <span>anos de</span>
-            <span>tradição</span>
-          </div>
-        </div>
       </section>
 
       {/* ================================================
@@ -246,11 +237,6 @@ function Home() {
                 Paula e Leandro — que ouvem sua história e a transformam em uma peça que só existe para você. 
                 Cada joia é única. Nenhuma criação é repetida. Nunca.
               </p>
-              
-              <div className="conceito-badge">
-                <span className="conceito-badge-numero">47</span>
-                <span className="conceito-badge-texto">anos de tradição</span>
-              </div>
             </div>
           </div>
         </div>
@@ -416,14 +402,6 @@ function Home() {
         
         <div className="container">
           <div className="tradicao-content">
-            <div className="tradicao-numero-destaque">
-              <span className="tradicao-numero-47">47</span>
-              <div className="tradicao-numero-detalhe">
-                <span className="tradicao-numero-anos">anos</span>
-                <div className="tradicao-numero-linha"></div>
-              </div>
-            </div>
-            
             <h2 className="tradicao-titulo">
               Transformando ouro em <em>significado.</em>
             </h2>
