@@ -11,6 +11,7 @@ import PedrasBrasileiras from './pages/PedrasBrasileiras'
 import VintageRestauracao from './pages/VintageRestauracao'
 import AliancasPersonalizadas from './pages/AliancasPersonalizadas'
 import ConsertosJoias from './pages/ConsertosJoias'
+import TransformacaoJoias from './pages/TransformacaoJoias'
 import Contato from './pages/Contato'
 import './styles/App.css'
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/vintage-restauracao" element={<VintageRestauracao />} />
             <Route path="/aliancas-personalizadas" element={<AliancasPersonalizadas />} />
             <Route path="/consertos-joias" element={<ConsertosJoias />} />
+            <Route path="/transformacao-joias" element={<TransformacaoJoias />} />
             <Route path="/contato" element={<Contato />} />
           </Routes>
         </main>

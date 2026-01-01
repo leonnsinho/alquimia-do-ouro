@@ -35,6 +35,7 @@ function Header() {
   const servicosLinks = [
     { path: '/consertos-joias', label: 'Consertos de Joias' },
     { path: '/vintage-restauracao', label: 'Vintage & Restauração' },
+    { path: '/transformacao-joias', label: 'Transformação' },
   ]
 
   return (

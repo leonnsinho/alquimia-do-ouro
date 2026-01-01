@@ -60,7 +60,7 @@ function ConsertosJoias() {
         <div className="container">
           <div className="conceito-grid">
             <div className="conceito-imagem">
-              <img src="/maos trabalhando.png" alt="Mãos de ourives trabalhando em conserto de joias" />
+              <img src="/Close-up de mãos artesãs moldando ouro com precisão e delicadeza.png" alt="Mãos de ourives trabalhando em conserto de joias" />
             </div>
             <div className="conceito-texto">
               <h2>Cada joia merece uma segunda chance.</h2>

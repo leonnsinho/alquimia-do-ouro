@@ -44,7 +44,13 @@
   </url>
   <url>
     <loc>https://alquimiadoouro.com.br/consertos-joias</loc>
-    <lastmod>2025-12-30</lastmod>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alquimiadoouro.com.br/transformacao-joias</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
