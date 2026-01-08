@@ -1,7 +1,7 @@
 import './AliancasPersonalizadas.css'
 
 function AliancasPersonalizadas() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaríamos de criar alianças personalizadas.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaríamos de criar alianças personalizadas.')
 
   const diferenciais = [
     {
@@ -47,7 +47,7 @@ function AliancasPersonalizadas() {
         </div>
       </section>
 
-      {/* Imagem destaque */}}
+      {/* Imagem destaque */}
       <section className="section aliancas-destaque">
         <div className="container">
           <div className="destaque-grid">

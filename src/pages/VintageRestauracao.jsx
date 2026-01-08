@@ -1,7 +1,7 @@
 import './VintageRestauracao.css'
 
 function VintageRestauracao() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de restaurar uma joia antiga.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaria de restaurar uma joia antiga.')
 
   const servicos = [
     {
@@ -47,7 +47,7 @@ function VintageRestauracao() {
         </div>
       </section>
 
-      {/* Imagem e texto */}}
+      {/* Imagem e texto */}
       <section className="section vintage-conceito bg-off-white-quente">
         <div className="container">
           <div className="conceito-grid">

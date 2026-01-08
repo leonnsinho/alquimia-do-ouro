@@ -101,7 +101,7 @@ function PedrasBrasileiras() {
           </p>
           <div className="pedras-cta-buttons">
             <a 
-              href="https://wa.me/5515999999999"
+              href="https://wa.me/5515991611661"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-light"

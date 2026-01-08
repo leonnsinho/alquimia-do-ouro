@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './SobreNos.css'
 
 function SobreNos() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de conhecer mais sobre a Alquimia do Ouro.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaria de conhecer mais sobre a Alquimia do Ouro.')
 
   return (
     <div className="page sobre-nos">
@@ -20,8 +20,7 @@ function SobreNos() {
           <div className="sobre-hero-content">
             <span className="sobre-hero-label">Nossa História</span>
             <h1 className="sobre-hero-title">
-              Uma tradição familiar<br/>
-              em ourivesaria
+              Assim surgiu a <em>Alquimia do Ouro</em>
             </h1>
             <div className="sobre-hero-ornament">
               <span></span>
@@ -30,7 +29,7 @@ function SobreNos() {
               </svg>
               <span></span>
             </div>
-            <p className="sobre-hero-selo">47 anos de tradição no ofício da ourivesaria</p>
+            <p className="sobre-hero-selo">Um ateliê onde passado, presente e futuro se transformam em joias</p>
           </div>
         </div>
       </section>

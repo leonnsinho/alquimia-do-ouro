@@ -1,7 +1,7 @@
 import './JoiasPersonalizadas.css'
 
 function JoiasPersonalizadas() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de criar uma joia personalizada.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaria de criar uma joia personalizada.')
 
   return (
     <div className="page joias-personalizadas">

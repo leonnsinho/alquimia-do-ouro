@@ -1,7 +1,7 @@
 import './Contato.css'
 
 function Contato() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de criar uma joia exclusiva.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaria de criar uma joia exclusiva.')
 
   return (
     <div className="page contato">

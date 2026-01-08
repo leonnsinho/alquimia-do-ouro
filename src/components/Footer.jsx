@@ -1,8 +1,21 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import './Footer.css'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const [showMap, setShowMap] = useState(false)
+
+  const handleMapClick = (e) => {
+    e.preventDefault()
+    // Tenta abrir o modal primeiro
+    setShowMap(true)
+    // Se o iframe não carregar, o usuário pode usar o link direto que aparecerá no modal
+  }
+
+  const handleCloseMap = () => {
+    setShowMap(false)
+  }
 
   return (
     <footer className="footer">
@@ -38,10 +51,26 @@ function Footer() {
 
           <div className="footer-contact">
             <h4>Contato</h4>
-            <p>Sorocaba, São Paulo</p>
-            <a 
-              href="https://wa.me/5515999999999" 
-              target="_blank" 
+            <p className="footer-address">
+              Av. Pres. Juscelino Kubitschek de Oliveira, 660<br />
+              Sala 37, 3º Andar<br />
+              Centro, Sorocaba/SP
+            </p>
+            <button
+              onClick={handleMapClick}
+              className="footer-map-button"
+            >
+              Como Chegar
+            </button>
+            <a
+              href="mailto:atelie@alquimiadoouro.com.br"
+              className="footer-email"
+            >
+              atelie@alquimiadoouro.com.br
+            </a>
+            <a
+              href="https://wa.me/5515991611661"
+              target="_blank"
               rel="noopener noreferrer"
               className="footer-whatsapp"
             >
@@ -55,14 +84,46 @@ function Footer() {
           <p className="footer-copy">
             © {currentYear} Alquimia do Ouro. Todos os direitos reservados.
           </p>
-          <p className="footer-tradition">
-            47 anos de tradição no ofício da ourivesaria
-          </p>
           <p className="footer-designer">
             Designed by <a href="https://stormcore.com.br" target="_blank" rel="noopener noreferrer">Stormcore</a>
           </p>
         </div>
       </div>
+
+      {/* Modal com Google Maps */}
+      {showMap && (
+        <div className="map-modal" onClick={handleCloseMap}>
+          <div className="map-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="map-modal-close" onClick={handleCloseMap}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+            <div className="map-modal-header">
+              <h3>Alquimia do Ouro</h3>
+              <p>Av. Pres. Juscelino Kubitschek de Oliveira, 660 - Sala 37, 3º Andar</p>
+              <a
+                href="https://www.google.com/maps/dir//Av.+Pres.+Juscelino+Kubitschek+de+Oliveira,+660+-+Centro,+Sorocaba+-+SP,+18035-380"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="map-directions-link"
+              >
+                Abrir no Google Maps
+              </a>
+            </div>
+            <iframe
+              src="https://www.google.com/maps?q=Av.+Pres.+Juscelino+Kubitschek+de+Oliveira,+660,+Centro,+Sorocaba,+SP&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Alquimia do Ouro"
+            />
+          </div>
+        </div>
+      )}
     </footer>
   )
 }

@@ -1,7 +1,7 @@
 import './TransformacaoJoias.css'
 
 function TransformacaoJoias() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Gostaria de transformar uma joia antiga.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Gostaria de transformar uma joia antiga.')
 
   const exemplos = [
     {

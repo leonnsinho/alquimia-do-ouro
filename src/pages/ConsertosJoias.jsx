@@ -1,7 +1,7 @@
 import './ConsertosJoias.css'
 
 function ConsertosJoias() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Preciso consertar uma joia.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Preciso consertar uma joia.')
 
   const servicos = [
     {

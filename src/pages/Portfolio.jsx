@@ -1,7 +1,7 @@
 import './Portfolio.css'
 
 function Portfolio() {
-  const whatsappUrl = 'https://wa.me/5515999999999?text=' + encodeURIComponent('Olá! Vi o portfólio e gostaria de criar minha própria joia.')
+  const whatsappUrl = 'https://wa.me/5515991611661?text=' + encodeURIComponent('Olá! Vi o portfólio e gostaria de criar minha própria joia.')
 
   // Peças fictícias para o portfólio com legendas poéticas
   const pecas = [

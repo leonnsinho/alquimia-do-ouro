@@ -76,6 +76,43 @@
   margin-bottom: 0.75rem;
 }
 
+.footer-address {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-map-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+  background: transparent;
+  color: var(--dourado);
+  border: 1px solid var(--dourado);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transicao-suave);
+}
+
+.footer-map-button:hover {
+  background: var(--dourado);
+  color: var(--verde-musgo-escuro);
+}
+
+.footer-email {
+  display: block;
+  color: rgba(250, 248, 245, 0.7);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  transition: var(--transicao-suave);
+}
+
+.footer-email:hover {
+  color: var(--dourado);
+}
+
 .footer-whatsapp {
   display: inline-flex;
   align-items: center;
@@ -89,6 +126,113 @@
 
 .footer-whatsapp:hover {
   color: var(--dourado-claro);
+}
+
+/* Modal do Mapa */
+.map-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.map-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-modal-header {
+  padding: 1.5rem;
+  background: var(--verde-musgo-escuro);
+  color: white;
+  text-align: center;
+}
+
+.map-modal-header h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  color: var(--dourado);
+  margin: 0 0 0.5rem 0;
+}
+
+.map-modal-header p {
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+}
+
+.map-directions-link {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--dourado);
+  color: var(--verde-musgo-escuro);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transicao-suave);
+}
+
+.map-directions-link:hover {
+  background: var(--dourado-claro);
+  transform: translateY(-2px);
+}
+
+.map-modal-content iframe {
+  flex: 1;
+}
+
+.map-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: var(--transicao-suave);
+}
+
+.map-modal-close:hover {
+  background: var(--dourado);
+  transform: scale(1.1);
+}
+
+.map-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--verde-musgo-escuro);
+}
+
+@media (max-width: 768px) {
+  .map-modal {
+    padding: 1rem;
+  }
+
+  .map-modal-content {
+    height: 500px;
+  }
 }
 
 /* Bottom */
