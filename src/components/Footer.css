@@ -128,6 +128,37 @@
   color: var(--dourado-claro);
 }
 
+/* Redes Sociais */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--dourado);
+  color: var(--dourado);
+  transition: var(--transicao-suave);
+}
+
+.footer-social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social-link:hover {
+  background: var(--dourado);
+  color: var(--verde-musgo-escuro);
+  transform: translateY(-3px);
+}
+
 /* Modal do Mapa */
 .map-modal {
   position: fixed;
